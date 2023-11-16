@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\title{General Physics Midterm 2023}
+\author{teacher:Yong Xu}
+\date{November 15th 2023}
+
+\begin{document}
+
+\maketitle
+\paragraph{Introduction}
+This part doesn't actually appear on the exam paper, instead making a basic introduction to the details of the exam. The exam takes 2.5 hours, and requires you to use English to answer. On the following recollection version for the exam contents, factual errors or typos may occur. Moreover, it's significantly challenging to recall the scores of each problem after exam, so we only write down the scores that we are certain with.
+
+Since the exam contains a lot of numerical problems, it's obvious that we can't guarantee that the numbers are exactly the same as in the exam. However, the problems are checked so that they are still solvable.
+
+\section{(8pts)}
+Let $A$ be the matrix $$\begin{pmatrix} 2 & 1 & 0 & 0\\ 1 & 0 & 1 & 1 \\ 4 & 1 & 0 & 0 \end{pmatrix}$$ . Use \textbf{LU decomposition} to solve the following linear equations:$Ax=b_1$ and $Ax=b_2$, where $b_1=\begin{pmatrix}1\\2\\3\end{pmatrix}$ and $b_2=\begin{pmatrix}0\\1\\2\end{pmatrix}$.
+
+\section{(8pts)}
+Let $A=\begin{pmatrix}
+    1&2&3\\2&0&2\\1&1&0
+\end{pmatrix}$. Compute the rank and determinant of $A$. Is $A$ invertible? Why? If A is invertible, please calculate the inverse of $A$.
+\section{(10pts)}
+For a linear transformation $T$ on an finite dimensional vector space $V$, if $null(T^2)=null(T),$ please prove that $R(T)\cap N(T)=\{0\}.$
+\section{(10pts)}Let $A=\begin{pmatrix}
+    1&0&0&2\\0&0&0&4\\3&0&0&0
+\end{pmatrix}$.
+Find the invertible matrices $P\in M_{3\times 3},Q\in M_{4\times 4}$ so that $$A=P\begin{pmatrix}
+    1&0&0&0\\0&1&0&0\\0&0&0&0
+\end{pmatrix}Q$$
+\section{(14pts)}
+Define the operator $L(\rho)=l\rho l^+-\frac{1}{2}\{l^+ l,\rho\}$, where $\{l^+ l,\rho\}\equiv l^+ l\rho+\rho l^+ l$.
+\paragraph{(1),4pts}
+Is the operator $L$ linear? Justify your answer.
+\paragraph{(2),6pts}
+If $\rho\in M_{2\times 2}$, and let $l=\begin{pmatrix}
+    1&1\\0&-1
+\end{pmatrix}$, please calculate $L$ in the standard ordered basis of $M_{2\times 2}$(that is, $e_1=\begin{pmatrix}
+    1&0\\0&0
+\end{pmatrix}$,$e_2=\begin{pmatrix}
+    0&1\\0&0
+\end{pmatrix}$,$e_3=\begin{pmatrix}
+    0&0\\1&0
+\end{pmatrix}$,$e_4=\begin{pmatrix}
+    0&0\\0&1
+\end{pmatrix}$.)
+\paragraph{(3),5pts}
+In the conditions of (2), please find the rank and nullity of $L$.
+\section{(10pts)}
+Let $V,W$ be vector spaces, and $T:V\rightarrow W$ is a linear transformation. Define $T^t$ by $T^t g=gT,\forall g\in W^*$. Let $\beta,\gamma$ are bases of $V,W$, respectively. Please prove that $T^t$ is linear, and that $[T^t]_{\gamma^*}^{\beta^*}=([T]_{\beta}^{\gamma})^t$. 
+\section{(10pts)}
+In the vector space $\mathbb{R}^2,$ a linear transformation has matrix representation $[T]_\gamma=\begin{pmatrix}
+    1&2\\2&-1
+\end{pmatrix}$, and the basis $\gamma=\{(1,2),(1,-2)\}$. Please calculate $[T]_\beta$, where $\beta$ is the standard basis of $\mathbb{R}^2$.
+\section{(10pts)}
+Let $V$ be a vector space over field $F$ . For $S\in V$, define $S^0=\{f\in V^*: f(v)=0,\forall v\in S\}$ to be the annihilator set of $S$. Prove that if $W$ is a subspace of $V$, then $\dim W+\dim W^0=\dim V$.
+
+Hint: consider the dual basis.
+\section{(10pts)}
+Consider the following linear system:
+$\begin{cases} (\lambda+3)x_1+\lambda x_2+(\lambda -1)x_3=1\\ \lambda x_1+x_2+x_3=\lambda\\ 3(1+\lambda) x_1+(\lambda-1) x_2-2 x_3=2\lambda\end{cases}$
+\paragraph{(1)}Please find the values of $\lambda\in \mathbb{R}$ so that the system has no solution, unique solution, and infinitely many solutions, respectively.
+\paragraph{(2)} For the cases when the system has solutions, calculate the solutions in terms of $\lambda$.
+\section{(10pts)}
+Let $A,B\in M_{n\times n}$ satisfies $rank A=r,rank B=s,rank \begin{pmatrix}
+    A\\B
+\end{pmatrix}=k$. Define $W_1=\{X\in M_{n\times n}: AX=O\},W_2=\{X\in M_{n\times n}: BX=O\}$, where $O$ is the zero matrix. Please calculate $\dim(W_1+W_2)$.
+
+Note: In the problem, the definition of $S_1+S_2$ (where $S_1,S_2$ are subsets) are given. It is: $S_1+S_2=\{x+y:x\in S_1,y\in S_2\}$.
+
+\end{document}
