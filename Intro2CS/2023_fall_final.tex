@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\title{Intro2CS Final Exam}
+\author{}
+\date{January 2024}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction}
+
+This test contain 4 parts: true or false questions, multiple choice question, the short Q\&A questions and bonus. For true or false questions, if you get wrong answer, you will get $-1$ points; for multiple choice questions, you will get zero points as long as any of your answers is wrong; for short Q\&A questions, you have to derive your results, otherwise you will get zero points even your final answer is correct. On the other hand, even if your answer is incorrect, you can receive partial scores.
+
+Since the true-or-false questions contains 28 questions in total, and the multiple choice question have 16 ones, it is obvious that we can't reconstruct all the questions after the exam. However, we will do our best to recall them.
+\section*{1 True or False Questions}
+
+\section*{2 Multiple Choice Questions}
+\begin{enumerate}
+    \item Choose all the correct statements:
+    \begin{enumerate}
+        \item This course has 2 TA's.
+        \item Total 4 professors from IIIS gave us a talk.
+        \item Professor Yi Wu's research area is human-AI interaction and reinforcement learning.
+        \item Professor Tao Du's research area is computer vision.
+    \end{enumerate}
+\end{enumerate}
+\section*{3 Short Q\&A Questions}
+\begin{enumerate}
+    \item Consider a linear model $y=Wx$, where the bias term is omitted for conciseness. Assume the sizes are $y\in \mathbb{R}^m,W\in \mathbb{R}_{m\times n}, x\in \mathbb{R}^n$ .Now, we assume that the entries in $W$ are chosen randomly from the Gaussian distribution $N(0,\sigma^2)$, and the entries in $x$ are chosen randomly from the standard distribution $N(0,1)$. Assume that all these variables are independent, please calculate the expectation $E(y_i)$ and the variance $Var(y_i)$.
+    \item Consider the reduce function in Python. It takes an function and a \texttt{iterable} (or array, as it is in this problem) as input, and is defined below in Python style:
+    \begin{verbatim}
+        def reduce(f,a):
+            result = a[0];
+            for i in range(1,len(a)):
+                result = f(result,a[i])
+            return result
+    \end{verbatim}
+    \begin{enumerate}
+        \item If $f(x,y)=x+y$, describe the effect of \texttt{reduce(f,a)}, where \texttt{a=[a[0],a[1],.,a[n-1]]}
+ (\texttt{n=len(a)})is an array. Calculate the result when \texttt{a=[1,2,3]}.
+ \item Consider the function \texttt{map}: \texttt{map(g,a)=[g(a[0]),g(a[1]),...,g(a[n-1])]}.  Let the function $g$ be :
+ \begin{align*}
+ g=\begin{cases}
+     0&,n\text{ is odd}\\1& ,n\text{ is even}\\
+ \end{cases},
+ \end{align*}
+find the result of \texttt{reduce(f,map(g,a))}. The function $f$ is same as in (a).
+\end{enumerate}
+    \item Consider the key distribution problem: two people Alice and Bob want to share some secret information via a insecure channel. The asymmetric method is secure, but it is not efficient. On the other hand, the symmetric method is secure, but it requires the key to be securely distributed to these two people. Please come up with a method to help Alice and Bob make their conversation both efficiently and securely.
+    \item  Please implement one full-adder using half-adders and logic gates. Please also implement an gated-D latch using SR-latch and logic gates. Note that these sentences means that you can use the \emph{half-adders} and the \emph{logic gates} together, instead of meaning that you have to implement the \emph{full-adder} using them separately.  
+\end{enumerate}
+\section*{4 Bonus(1 pt)}
+Please write down your suggestions of the course. You can get full points as long as you write down your answer.
+\end{document}
