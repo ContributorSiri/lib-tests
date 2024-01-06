@@ -1,5 +1,15 @@
 # lib-tests
-A library for saving midterm and final exams
+A library for saving midterm and final exams of 1115.
+
+## Disclaimer
+You may ask what is 1115? It is a mysterious place--
+- where all the classes are taught in English
+- where the Student's Day has something to do with [ChatGPT](chat.openai.com)
+- where some students can publish their first paper in the freshman year
+- where calculating the SVD for a 4*5 matrix is the most common entertainment
+- ...
+
+If you still don't know what it is about-well, we don't understand as well! :)
 
 ## Notes
 1. Please feel free to contribute to this repository by uploading the exam papers. Also, you can make good use of the exams provided here to help yourself and your friends improve academic skills.
