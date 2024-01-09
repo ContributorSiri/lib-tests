@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\title{Linear Algebra Final 2023-2024}
+\author{teacher:Yong Xu}
+\date{January 9th 2024}
+
+\begin{document}
+
+\maketitle
+\paragraph{Introduction}
+This part doesn't actually appear on the exam paper, instead making a basic introduction to the details of the exam. The exam takes 2.5 hours, and requires you to use English to answer. On the following recollection version for the exam contents, factual errors or typos may occur. Moreover, it's significantly challenging to recall the scores of each problem after exam, so we only write down the scores that we are certain with.
+
+Since the exam contains a lot of numerical problems, it's obvious that we can't guarantee that the numbers are exactly the same as in the exam. However, the problems are checked so that they are still solvable.
+
+\section*{1(12pts)}
+Use the Gram-Schmidt process to obtain an orthonormal basis of $\mathbb{R}^3$ from the three vectors $v_1=(1,0,1),v_2=(0,1,1),v_3=(1,3,3)$ .
+
+\section*{2(12pts)}
+Consider the matrix $A=\begin{pmatrix}
+    1 & 0 & 1 \\ 0 & 1 & 1 \\ -1 & 0 & a \\ 0 & -a & 1
+\end{pmatrix}$ ,where  $a$ is a real number. Suppose $\text{rank}(A^tA)=2$.
+
+\paragraph{(a)} calculate $a$.
+\paragraph{(b)} Find an orthogonal transform to simplify the bilinear form $f(x_1,x_2,x_3)=xA^tAx^t$, $x=(x_1\text{ } x_2 \text{ }x_3)$.
+
+\section*{3(12pts)}
+
+Let $A=\begin{pmatrix}
+    2 & 0 & 1 & 0 \\ 0 & 2 & 0 & 1 \\ 0 & 0 & 2 & 0 \\ 0 & 0 & 0 & 2
+\end{pmatrix}$.
+\paragraph{(a)} Is $A$ diagonalizable? State your reason.
+\paragraph{(b)} Can $A$ be transform to a Jordan Canonical form? State your reason. If your answer is yes, also find the Jordan canonical basis $\beta$ and the Jordan canonical form of $A$. Also find the invertible matrix $Q$ such $Q^{-1}AQ=B$ is the Jordan canonical form. 
+
+\section*{4(12pts)}
+
+Let $U$ be an unitary operator and $W$ be a $U$-invariant subspace. 
+\paragraph{(a)} Prove that $U(W)=W$.
+\paragraph{(b)} Prove that $W^{\perp}$ is also $U$-invariant.
+ 
+\section*{5(20pts)}
+If $T$ is an linear operator on a finite-dimensional inner product space $V$, prove that there exist an orthonormal basis $\beta$ such that $[T]_{\beta}$ is upper-triangular.
+
+\section*{6(16pts)}
+If a symmetric matrix $A$ satisfy that each row of $A$ sum to $3$, and $\alpha_1=(1,-2,1)^t$ and $\alpha_2=(0,1,-1)^t$ satisfy the linear equations $Ax=0$:
+\paragraph{(a)} Find the eigenvalues and the eigenvectors of $A$.
+\paragraph{(b)} Calculate the orthogonal matrix $Q$ and diagonal matrix $D$ such $Q^{-1}AQ=D$. 
+\paragraph{(c)} Calculate $A$ and $(A-\frac{3}{2}I)^6$, where $I$ is the $3\times 3$identity matrix.
+\section*{7(16pts)}
+Consider a real matrix $S$ with size $n\times n$ having the property that $S^t=-S$.
+\paragraph{(a)(6 pts)}
+Prove that $S^2$ is a diagonalizable operator with eigenvalues equal or lesser than $0$.
+\paragraph{(b)(10 pts)}
+Prove there exist a basis $\beta$, such that $[L_S]_\beta$ is in the following form:
+$$\begin{pmatrix}
+    0 & -\lambda_1\\ \lambda_1 & 0 \\ & & 0 & -\lambda_2\\ & & \lambda_2 & 0\\ & & & & & \cdots\\ & & & & & & 0 & -\lambda_r\\ & & & & & & \lambda_r & 0\\ & & & & & & & & 0\\ & & & & & & & & & \cdots
+\end{pmatrix}$$
+where $\lambda_1\ge \lambda_2 \ge \cdots \ge \lambda_r>0$.
+
+
+\end{document}
