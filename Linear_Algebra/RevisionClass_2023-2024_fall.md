@@ -1,5 +1,5 @@
 ## 2023-2024 线性代数期末复习会题目
-1. 考虑线性空间 $V=M_{n\times n}(\mathbb{C})$. 在 $V$ 上定义内积 $\langle A,B\rangle=\text{tr}(A^T\overline{B})$. 对任意 $M\in V$, 定义线性变换 $T_M$ 满足 $T_M(X)=MX$；线性变换 $U_M$ 满足 $U_M(X)=$M^TXM$.     
+1. 考虑线性空间 $V=M_{n\times n}(\mathbb{C})$. 在 $V$ 上定义内积 $\langle A,B\rangle=\text{tr}(A^T\overline{B})$. 对任意 $M\in V$, 定义线性变换 $T_M$ 满足 $T_M(X)=MX$；线性变换 $U_M$ 满足 $U_M(X)=M^TXM$.     
 (1) 证明：$M$ 是酉矩阵等价于 $T_M$ 是酉变换；    
 (2) 设 $M$ 可逆，证明：$M$ 可对角化等价于 $U_M$ 可对角化.
 
