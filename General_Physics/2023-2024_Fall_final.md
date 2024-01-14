@@ -7,7 +7,10 @@ Teacher: Luyan Sun
 ## Short Answer Problems(5 pts each)
 
 1. Directly write down the boundary conditions when the two sides of the interface has dieletric constant $\epsilon_1,\epsilon_2$ (its is $\epsilon_0\epsilon_{r_{1,2}}$ )and magnetic permiability $\mu_0$. You should note the direction of normal vector $\overrightarrow{n}$.
-2. Prove that the inpedance of the infinite ladder network is $z_0=\frac{z_1}{2}+\sqrt{\frac{z_1^2}{4}+z_1z_2}$. See the figure below. ![ladder](/Images/General_Physics/2023-2024_Fall_Final_ladder.png)
+2. Prove that the inpedance of the infinite ladder network is $z_0=\frac{z_1}{2}+\sqrt{\frac{z_1^2}{4}+z_1z_2}$. See the figure below.
+
+![Pict1](/Images/General_Physics/2023-2024_Fall_Final_ladder.png)
+
 3. Prove the wave equations for $E$ and $B$: $\nabla^2\overrightarrow{E}-\frac{1}{c^2}\frac{\partial^2 \overrightarrow{E}}{\partial t^2}=0$ and $\nabla^2\overrightarrow{B}-\frac{1}{c^2}\frac{\partial^2 \overrightarrow{B}}{\partial t^2}=0$.
 4. Prove that for a plane wave propogating along the $x$ axis in the vaccum(i.e. the waves have form $e^{ikx-i\omega t}$), the eletric field $E$, the magnetic field $B$, and the unit vector $e_x$ are mutually orthogonal.
 
