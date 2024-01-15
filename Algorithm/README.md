@@ -7,6 +7,6 @@ This course is a course for sophomore. However, it is the prerequisite for some 
 - Final: 40%
 - Bonus: 4.5% (9 problems, 0.5% each, may be a little different each year)
  
-The ones who has OI certificate can skip some of the HW problems.
+The ones who has OI certificate(NOIP-1 or other equivalent prize)can skip some of the HW problems.
 
 Notes: Always write something if you can't answer the questions. There're many unexpected partial points, even for trivial statements.
