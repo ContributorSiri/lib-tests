@@ -34,6 +34,11 @@ We consider a randomized algo for vertex cover: randomly select an uncovered edg
     (Hint: Let $p_e$ be the probability that $e$ has been chosen. For a vertex $v$, estimate $\sum p_e$($e$ incident to $v$).)
     
 **Problem 5**  
+Given a convex n-gon $P$, a **chord** is an edge connecting two non-adjacent vertices of $P$, and a **triangulation** is using n-3 chords to partition $P$ to n-2 triangles.
+
+(1) Calculate the number of different triangulations. (2.5pts)
+
+(2) Give a poly-time algorithm to find a triangulation of minimum total chord length. (2.5pts).
 **Problem 6**  
 **Problem 7**  
 **Problem 8**  
