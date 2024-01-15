@@ -15,6 +15,13 @@ at most $d$ miles a day, and must rest at a rest station at night.
 (2) Suppose he has $k$ energy bars, and eating one of them can travel one more mile a day. Give a poly-time algorithm (on n) to find the minimum days he needed to get to the town. You can assume solution exists. (2pts)
 
 **Problem 2**  
+$A=\{a_1,\dots,a_n\}$ is a set, with each element associated a popsitive weight. $F$ is a family of subsets of $A$, and a subset $H$ of $A$
+is called a Hitting Set if and only if for all $X\in F,|X \cap H|>0$. The goal is to find a hitting set with the minimum total weight.
+
+(1) Show the problem is NP-hard. (2 pts)
+
+(2) Give a poly-time b-approximation algorithm.($b=\max_{X \in F}|X|$)(3 pts,partial points for worse solutions, approximation solutions with expect time is allowed).
+
 **Problem 3**  
 **Problem 4**  
 **Problem 5**  
