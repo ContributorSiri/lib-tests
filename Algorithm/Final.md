@@ -23,6 +23,8 @@ is called a Hitting Set if and only if for all $X\in F,|X \cap H|>0$. The goal i
 (2) Give a poly-time b-approximation algorithm.($b=\max_{X \in F}|X|$)(3 pts,partial points for worse solutions, approximation solutions with expect time is allowed).
 
 **Problem 3**  
+In a directed graph $G=(V,E)$, the in-deg and out-deg are the same for any specific vertices.(Different vertices can have different deg). Proof or give a counterexample that if $x$ has $k$ pairwise edge-disjoint paths to $y$, then so do $y$ to $x$. (5 pts)
+
 **Problem 4**  
 **Problem 5**  
 **Problem 6**  
