@@ -26,6 +26,13 @@ is called a Hitting Set if and only if for all $X\in F,|X \cap H|>0$. The goal i
 In a directed graph $G=(V,E)$, the in-deg and out-deg are the same for any specific vertices.(Different vertices can have different deg). Proof or give a counterexample that if $x$ has $k$ pairwise edge-disjoint paths to $y$, then so do $y$ to $x$. (5 pts)
 
 **Problem 4**  
+We consider a randomized algo for vertex cover: randomly select an uncovered edge and a vertice incident to it, until all edges are covered.
+
+(1) Prove it is not a c-approximation for some constant c in the weighted vertex cover. (1 pt)
+
+(2) Is it a c-approximation for some constant c in the unweighted(cardinality) vertex cover? (4 pts)
+    (Hint: Let $p_e$ be the probability that $e$ has been chosen. For a vertex $v$, estimate $\sum p_e$($e$ incident to $v$).)
+    
 **Problem 5**  
 **Problem 6**  
 **Problem 7**  
