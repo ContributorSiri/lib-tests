@@ -62,5 +62,13 @@ is greater than $\delta$.
 (2) Give an approximation algorithm that gives no worse solution than the optimal, but the constraint can be loosened to $\alpha\delta$ where $\alpha \in (0,1)$.(3pts)
 
 **Problem 9**  
+A **Laminar Famliy** $F$ of subsets means that for every two subsets $X,Y \in F$, we have $X \subset Y$ or $Y \subset X$.
+
+(1) Suppose $F_1,F_2$ are two Laminar Families of subsets of $A=\{a_1,a_2,\dots,a_n\}$. If we can assign each element in $A$ a non-negative weight $x_i$
+such that $\sum x_i = B$ is an integer, satisfying $\forall X \in F_1, \sum_{a_i\in X} x_i \le W_X,  \forall X \in F_2, \sum_{a_i\in X} x_i \le {W'}_X, $, 
+where $W_X,{W'}_X$ are integer constraints. Prove we can assign each element in $A$ a non-negative **integer** weight $x_i$ also satisfying the conditions. (2pts)
+
+(2) Given a directed graph $G=(V,E)$. Define $$M_{X,e}=  1 (u \in X, v \notin X), -1 (v\in X, u \notin X), 0(otherwise) (e=u\to v)$$. Let $F=\{V_1,\dots,V_m\}$ be a laminar family of subsets of $V$, prove the $m \times |E|$ matrix whose $(i,j)$ component is $M_{V_i,e_j}$ is a totally unimodular matrix.(Any square submatrix of it has determinant $0,-1,+1$)
+
 
 **Problem 10**  
