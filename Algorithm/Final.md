@@ -6,3 +6,13 @@
 - The total points is 40pts and each problem is 5pts. You should do **all the problems in P1~P5** and choose **3 problems from
   P6~P10**. If you choose more than 3, we will consider the three for which you get the highest scores.
 
+**Problem 1**  
+**Problem 2**  
+**Problem 3**  
+**Problem 4**  
+**Problem 5**  
+**Problem 6**  
+**Problem 7**  
+**Problem 8**  
+**Problem 9**  
+**Problem 10**  
