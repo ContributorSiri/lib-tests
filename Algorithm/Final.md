@@ -73,6 +73,6 @@ where $W_X,{W'}_X$ are integer constraints. Prove we can assign each element in 
 
 **Problem 10**  
 Suppose we have n lines $l_1,\dots,l_n$, and let $P_i$ be the half-plane above $l_i$ (Assume the slope of them all exists). $L=\cap_{i} P_i$, and we want to find the
-lowest point in $L$. There's a linear-time algorithm for it: First, pair the lines to n/2 disjoint pairs; Then, find the intersection point of each pair $x_1,\dots,x_{\frac{n}{2}}$ and find the median $x_m$; Then, determine whether the answer $x^*$ is greater than, equal to, or smaller than $x_m$; Then, carefully delete $\frac{n}{4}$ lines.  
+lowest point in $L$. There's a linear-time algorithm for it: First, pair the lines to n/2 disjoint pairs; Then, find the intersection point of each pair $x_1,\dots,x_{\frac{n}{2}}$ and find the median $x_m$; Then, determine whether the answer $x^*$ is greater than, equal to, or smaller than $x_m$; Then, carefully delete $\frac{n}{4}$ lines. You may assume there's no parallel lines, and no three lines intersect in one point.
 Finish the detail of the algorithm, prove the correctness, and analyze the time complexity.(5 pts)
 
