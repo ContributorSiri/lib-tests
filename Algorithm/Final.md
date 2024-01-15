@@ -50,8 +50,17 @@ is tail/head.
 (2) If you don't know $\delta$, prove you can guess with success probability >0.99 in $O(\delta^{-2} \log \log \delta^{-1})$ tosses.(Hint:Guess $\delta$) (3pts)
 
 **Problem 7** 
+
 Given a directed graph $G=(V,E)$, you can delete at most $k$ edges of it. Give a poly-time algorithm to minimize $$\max_v |d^{+}(v)-d^{-}(v)|$$
 
 **Problem 8**  
+There are $n$ points in a metric space $R^d$, each with a value. You want to find a subset of points with maximum total value, while the pairwise distance 
+is greater than $\delta$.
+
+(1) Give a poly-time algorithm in $d=1$ case, and the metric is $|x-y|$.(2pts)
+
+(2) Give an approximation algorithm that gives no worse solution than the optimal, but the constraint can be loosened to $\alpha\delta$ where $\alpha \in (0,1)$.(3pts)
+
 **Problem 9**  
+
 **Problem 10**  
