@@ -49,7 +49,9 @@ is tail/head.
 
 (2) If you don't know $\delta$, prove you can guess with success probability >0.99 in $O(\delta^{-2} \log \log \delta^{-1})$ tosses.(Hint:Guess $\delta$) (3pts)
 
-**Problem 7**  
+**Problem 7** 
+Given a directed graph $G=(V,E)$, you can delete at most $k$ edges of it. Give a poly-time algorithm to minimize $$\max_v |d^{+}(v)-d^{-}(v)|$$
+
 **Problem 8**  
 **Problem 9**  
 **Problem 10**  
