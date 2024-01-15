@@ -5,6 +5,7 @@
   equivalant in the problems.
 - The total points is 40pts and each problem is 5pts. You should do **all the problems in P1~P5** and choose **3 problems from
   P6~P10**. If you choose more than 3, we will consider the three for which you get the highest scores.
+- You need to prove the correctness of the algorithm you designed.
 
 **Problem 1**  
 A man wants to travel to a town $L$ miles away, and there are n rest stations $x_1,\dots,x_n$ miles from him. He can travel 
@@ -39,7 +40,15 @@ Given a convex n-gon $P$, a **chord** is an edge connecting two non-adjacent ver
 (1) Calculate the number of different triangulations. (2.5pts)
 
 (2) Give a poly-time algorithm to find a triangulation of minimum total chord length. (2.5pts).
+
 **Problem 6**  
+There is a coin with a bias $\delta > 0$, that is, it has prob $0.5+\delta$ to be one side than another. You need to guess this side
+is tail/head.
+
+(1) If you know $\delta$, prove you can guess with success probability >0.99 in $O(\delta^{-2})$ tosses. (2pts)
+
+(2) If you don't know $\delta$, prove you can guess with success probability >0.99 in $O(\delta^{-2} \log \log \delta^{-1})$ tosses.(Hint:Guess $\delta$) (3pts)
+
 **Problem 7**  
 **Problem 8**  
 **Problem 9**  
