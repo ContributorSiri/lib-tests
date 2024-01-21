@@ -6,6 +6,7 @@
 - The total points is 40pts and each problem is 5pts. You should do **all the problems in P1~P5** and choose **3 problems from
   P6~P10**. If you choose more than 3, we will consider the three for which you get the highest scores.
 - You need to prove the correctness of the algorithm you designed.
+- The median score is 27, and the average score is 26.75.
 
 **Problem 1**  
 A man wants to travel to a town $L$ miles away, and there are n rest stations $x_1,\dots,x_n$ miles from him. He can travel 
