@@ -35,7 +35,7 @@ the number of shortest paths from $s$ to $t$.
 
 7.(3pts)
 
-Consider the generalized version of minimum spanning tree problem:Given a graph $G=(V,E)$, and the weight of each edge $e$ is a quadradic function $w_e(t)=a_e^2t+b_et+c_e(a_e>0)$.  
+Consider the generalized version of minimum spanning tree problem:Given a graph $G=(V,E)$, and the weight of each edge $e$ is a quadradic function $w_e(t)=a_et^2+b_et+c_e(a_e>0)$.  
 Give an poly-time algorithm to find a minimum spanning tree among all time, that is, $\min_{t,T} \sum_{e\in T} w_e(t)$, where $T$ is a spanning tree of $G$.
 
 8.(3pts)
