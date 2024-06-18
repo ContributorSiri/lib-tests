@@ -88,7 +88,7 @@ Find the ratio $\frac{n_1}{n_2}$.
 
 Consider three reference frame $S,S',S''$: With respect to $S$, $S'$ move with velocity $v$ along $x$. With respect to $S'$, $S''$ move with velocity $v$ along $y'$. In $S$ frame, what does $x''$ axis look like? Is it a straight line or not, and if it is, find the slope of the line.
 
-## Problem 9 (10 pts)
+## Problem 9 (5 pts)
 
 Consider the Compton scattering problem. A photon with energy $E_0$ hit an electron at rest. The rest mess of the electron is $m_e$. After the collision, the photon is scattered with an angle $\theta$. (i.e. The angle between the new velocity and the old velocity of the photon is $\theta$.) Find the energy $E$ of the photon after the collision.
 
