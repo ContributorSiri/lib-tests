@@ -1,0 +1,9 @@
+{
+    "grammarly.selectors": [
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "Abstract_Algebra/2024_spring_final.md"
+        }
+    ]
+}
