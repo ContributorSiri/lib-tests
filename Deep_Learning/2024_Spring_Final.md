@@ -65,7 +65,7 @@ $$I(X,Z)=\sum_{x,z} p(X=x,Z=z)\frac{\log p(X=x,Z=z)}{\log [p(X=x)p(Z=z)]}$$
 
 3. Consider a GAN, prove that the optimal discriminator will output possiblity $D_{\phi}^*(x) = \frac{p_{data}(x)}{p_{data}(x)+p_{\theta}(x)}$.
 
-4. Prove that when the discriminator is too strong, the generator will face the issue of gradient vanishing. You can assume that $D_{\phi}(x)=\sigma(D_{\phi}'(x))$, where $\sigma$ is the sigmoid function, and $D_{\phi}'(x)$<<0.
+4. Prove that when the discriminator is too strong, the generator will face the issue of gradient vanishing. You can assume that $D_{\phi}(x)=\sigma(D_{\phi}'(x))$, where $\sigma$ is the sigmoid function, and $D_{\phi}'(x)$ << 0.
 The generator loss is $\mathbb{E}_{z\sim N(0,1)} \log D_{\phi}(G_{\theta}(z))$
 
 5. To deal with the issue above, we want to make the discriminator don't achieve 100% accuracy(say 70%). Use mutual information to modify the training objective, and explain your loss function and training procedure.
@@ -79,7 +79,7 @@ Consider a diffusion model on discrete space $\{1,2,...,K\}$, at each time step,
 3. Design a set of $Q_i$ that makes the input more and more noisy (e.g. $\mathcal{H}(q(x_0))<\mathcal{H}(q(x_1|x_0))<...<\mathcal{H}(q(x_T|x_0))$), and calculate $q(x_T|x_0)$ correspond to your construction.
 4. Briefly discuss how this model can be used to train on sentences with small length. You should show the training procedure and the loss function.
 
-# 7."Fill in the middle"(2pts+2pts+2pts+2pts+2pts)
+# 7."Fill in the middle"(2pts+2pts+2pts+2pts+2pts=10pts)
 
 Suppose you have a pretrained BERT model, and say the probability distribution of it is $p^{BERT}$. You are given a sentence with middle part missing, say $x_1...x_l???x_r...x_n$ and you want to reconstruct it.
 
