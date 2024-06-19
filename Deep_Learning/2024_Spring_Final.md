@@ -7,14 +7,14 @@
 2. In high dimension(e.g.1000), dict embedding is better than Gumbel softmax.
 3. Skip connection is a common technique in neural network design, e.g. ResNet, DenseNet, Transformers.
 4. Flamingo, gpt-4v, llava are LLMs that support interleaved images.
-5. It's no safety issue to use generative models as the things they generated are fake.
-6. In normalizing flow, the term log p($z_0$) can be ignored in traning since it is a constant.
+5. There's no safety issue to use generative models as the things they generated are fake.
+6. In normalizing flow, the term log p($z_0$) can be ignored in training since it is a constant.
 7. AF has fast training speed and low inference speed, in contrast, IAF has fast inference speed and high traing speed.
 8. In GAN training, we should first train the discriminator to make it converge, then train the generator.
-9. Adam, ADaGrad, and other methods are making the learning rate different in different dimension.
+9. Intuitively, methods like Adam, ADaGrad are making the learning rate different and disentangled in different dimension.
 10. Intuitively, large $\beta$ in $\beta-VAE$ make the latent space disentangled. 
 11. Since we need bijection in normalizing flows, we can't use ReLU as activation function.
-12. Although Nestrov Momentum are not guranteed to converge, it's commonly used in real training.
+12. Although Nestrov Momentum have no convergence gurantee, it's commonly used in real training.
 13. When training a CNN with batchnorm, it's equivalent to use batchsize 32 for one step and use batchsize 1 for 32 steps while accumulating the gradient.
 14. SGD and GD have equal mean and variance in training.
 15. In evaluation, batchnorm normalizes the input by the mean and variance of a batch.
@@ -24,11 +24,12 @@
 19. When doing inpainting with VAE, we can just randomly mask out pixels and do generation.
 20. EBM is hard to scale-up because the restriction of the model structure.
 21. Gibbs Sampling is a special case of the MH algorithm, where the acceptance rate is always 1.
+22. We want to fit a multimodal distribution by normal distribution and using KL loss function, but this results in collapsing to one mode. Change the loss function to JSD can fix this problem.
 
 (I can only remember this much... QWQ)
 # 2. Short Response Questions(2pts+(4+2)pts+2pts=10pts)
 
-1. After training a VQ-VAE, can we sample the latent $z$ in a uniform distribution and do generation? If not, what should we do?
+1. After training a VQ-VAE, can we sample the latent $z$ from a uniform distribution and do generation? If not, what should we do?
 
 2. 
 (1) Suppose we have a dataset with labels $\{x_i,y_i\}$, show how can we use these data to train a conditioned VAE and GAN.
