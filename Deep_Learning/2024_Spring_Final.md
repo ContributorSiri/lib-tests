@@ -1,13 +1,14 @@
-# DL FINAL(20% of the total score)
-# Total points: 88 points
-# Total time: 120 min
-# Cheatsheet: One page double sided A4, No calculators
+# DL FINAL
+- Total points: 88 points
+- Total time: 120 min (Comment: relatively short)
+- Cheatsheet: One page double sided A4 paper, No calculators
+- 20% of the total score (4*10=40% coding project, 20% final project, 20% Homework, 3~5% Bonus)
 
 # 1. T/F Questions (30*1 pt=30pts, wrong answer will lead to -1pt)
 1. This course has 3 TAs
 2. In high dimension(e.g.1000), dict embedding is better than Gumbel softmax.
 3. Skip connection is a common technique in neural network design, e.g. ResNet, DenseNet, Transformers.
-4. Flamingo, gpt-4v, llava are LLMs that support interleaved images.
+4. Flamingo, gpt-4v, llava are LLMs that support interleaved images in texts.
 5. There's no safety issue to use generative models as the things they generated are fake.
 6. In normalizing flow, the term log p($z_0$) can be ignored in training since it is a constant.
 7. AF has fast training speed and low inference speed, in contrast, IAF has fast inference speed and high traing speed.
