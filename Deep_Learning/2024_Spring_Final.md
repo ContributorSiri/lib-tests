@@ -1,6 +1,7 @@
-# DL FINAL
+# DL FINAL(20% of the total score)
 # Total points: 88 points
 # Total time: 120 min
+# Cheatsheet: One page double sided A4, No calculators
 
 # 1. T/F Questions (30*1 pt=30pts, wrong answer will lead to -1pt)
 1. This course has 3 TAs
