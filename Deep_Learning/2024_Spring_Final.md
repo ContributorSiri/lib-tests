@@ -23,6 +23,7 @@
 18. The likelihood is tractable in both normalizing flow and diffusion models.
 19. When doing inpainting with VAE, we can just randomly mask out pixels and do generation.
 20. EBM is hard to scale-up because the restriction of the model structure.
+21. Gibbs Sampling is a special case of the MH algorithm, where the acceptance rate is always 1.
 
 (I can only remember this much... QWQ)
 # 2. Short Response Questions(2pts+(4+2)pts+2pts=10pts)
