@@ -15,7 +15,7 @@
 10. Intuitively, large $\beta$ in $\beta-VAE$ make the latent space disentangled. 
 11. Since we need bijection in normalizing flows, we can't use ReLU as activation function.
 12. Although Nestrov Momentum are not guranteed to converge, it's commonly used in real training.
-13. When training a CNN with batchnorm, it's equivalent to use batchsize 32 for one step and use batchsize 1 for 32 steps and accumulate the gradient.
+13. When training a CNN with batchnorm, it's equivalent to use batchsize 32 for one step and use batchsize 1 for 32 steps while accumulating the gradient.
 14. SGD and GD have equal mean and variance in training.
 15. In evaluation, batchnorm normalizes the input by the mean and variance of a batch.
 16. LoRA makes it possible to do fine-tuning with limited GPU memory.
