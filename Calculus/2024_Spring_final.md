@@ -11,7 +11,7 @@
 ## 填空题 (每题 $3$ 分，共 $30$ 分)
 1. 求积分 
     $$
-    \int_0^{\ln 3}dx\int_{x}^{\ln 3}\frac{\sin y}{y}dy=\underline{\hspace{1cm}}.
+    \int_0^{\frac{\pi}{3}}dx\int_{x}^{\frac{\pi}{3}}\frac{\sin y}{y}dy=\underline{\hspace{1cm}}.
     $$
 2. 求积分 $\int_{C^+}e^xdy+ye^xdx=\underline{\hspace{1cm}}$，其中积分路径 $C^+$ 是 $y=x^3$ 的图像，从 $(0,0)$ 到 $(1,1)$。
 3. 计算 $\int_\Omega (x^2+y^2)dxdy=\underline{\hspace{1cm}}$，其中 $\Omega=\{(x,y)|x^2+y^2\le 1, x,y\ge 0\}$.
