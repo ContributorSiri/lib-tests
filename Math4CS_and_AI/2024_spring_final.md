@@ -49,7 +49,7 @@ Additionally, the algorithm should only use no more than $O((\log nT)^2)$ space.
 Consider a Markov chain on a one-dimensional lattice with $n$ vertices. The transition probability is defined as follows:
 
 $$
-P(x\to y)=\begin{cases}\frac{1}{2}&,x=y\\\frac{1}{4}&,|x-y|=1(\text{mod } n)\\ 0&,\text{otherwise}\end{cases}
+P(x\to y)=\begin{cases}\frac{1}{2}&,x=y\\ \frac{1}{4}&,|x-y|=1(\text{mod } n)\\ 0&,\text{otherwise}\end{cases}
 $$
 
 1. Suppose that now there is a constant $\alpha$, such that for any $t= O(n^\alpha)$, we have
@@ -58,6 +58,6 @@ $$
 P^t\left(1\to \frac{n}{2}+1\right) \le \frac{1}{2n}.
 $$
 
-You may assume that $n$ is an odd number.
+Find the maximum value of $\alpha$. You may assume that $n$ is an odd number.
 
 2. Show that the mixing time of this Markov chain is at least $\Omega(n^2)$.
