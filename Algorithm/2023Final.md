@@ -63,7 +63,7 @@ is greater than $\delta$.
 (2) Give an approximation algorithm that gives no worse solution than the optimal, but the constraint can be loosened to $\alpha\delta$ where $\alpha \in (0,1)$.(3pts)
 
 **Problem 9**  
-A **Laminar Famliy** $F$ of subsets means that for every two subsets $X,Y \in F$, we have $X \subset Y$ or $Y \subset X$.
+A **Laminar Famliy** $F$ of subsets means that for every two subsets $X,Y \in F$, we have $X \subset Y$ or $Y \subset X$ or $X\cap Y=\emptyset$.
 
 (1) Suppose $F_1,F_2$ are two Laminar Families of subsets of $A=$ { $a_1,a_2,\dots,a_n$ }. If we can assign each element in $A$ a non-negative weight $x_i$
 such that $\sum x_i = B$ is an integer, satisfying $\forall X \in F_1, \sum_{a_i\in X} x_i \le W_X,  \forall X \in F_2, \sum_{a_i\in X} x_i \le {W'}_X, $, 
