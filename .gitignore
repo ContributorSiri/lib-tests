@@ -1,2 +1,7 @@
 *.DS_Store
 .vscode
+.aux
+.log
+.fdb_latexmk
+.fls
+.synctex.gz
