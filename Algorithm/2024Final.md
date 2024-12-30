@@ -50,7 +50,7 @@ is as large as possible.
 
 **Problem 5. (5 points)**
 We are given a simple undirected graph $G = (V, E)$, where $|V| = n$. Bob wishes to approximate $|E|$ without reading the whole input. In particular, Bob designs the following algorithm to approximate $|E|$: first, Bob samples $k$ ($k \ge 2$) i.i.d. vertices $u_1, u_2, \ldots, u_k$ uniformly from $V$. Then, Bob computes
-$$S := \# \{(i, j): 1 \le i < j \le k, u_iu_j \in E\}.$$
+$$S := \|\{(i, j): 1 \le i < j \le k, u_iu_j \in E\}\|$$
 
 **(1) (2.5 points)** Find the formula for $\mathbb{E}[S]$. (For a fixed $G$.) The answer should be in the form of $c_{n,k} \cdot |E|$, where $c_{n,k}$ depends only on $n, k$.
 

@@ -131,7 +131,7 @@ Question (a) (6 pts): Please identify the function that instantiate the message 
 Actually, mcssage passing is a fairly general formalism. Let's now consider the convolutional flavor of massage passing. We may define that:
 
 $$
-h_u^{(k)} = \phi\left(h_u^{(k-1)}, \oplus_{v\in N(u)}\left(\left\{W^{(k)}h_v^{(k-1)}\right\}\right)\right)
+h_u^{(k)} = \phi\left(h_u^{(k-1)}, \oplus_{v\in N(u)}\left(W^{(k)}h_v^{(k-1)}\right)\right)
 $$
 
 We can express our familiar 2D convolution layer as convolutional message passing on a graph. Consider an input $I\in R^{H\times W\times d^{(k-1)}}$, where $H\times W$ is the image size and $d^{(k-1)}$ is the input channels of the $k$-th layers of CNNs.
