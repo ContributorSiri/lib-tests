@@ -41,8 +41,8 @@ _Note:_ $\alpha,\beta$ are not exactly the one that appeared on the exam paper. 
 
 **Problem 10.** In textbook, it has been shown that the splitting field of $x^8-2$ over $\mathbb{Q}$ is $K:=\mathbb{Q}(\theta,i)$ (where $\theta=\sqrt[8]2$), and the Galois group $G:=\text{Gal}(K/\mathbb{Q})$ is isomorphic to $QD_{16}=\langle\sigma, \tau : \sigma^8=\tau^2=1, \sigma\tau=\tau\sigma^3\rangle$. The lattice of the subgroups of $G$ and subfields of $K$ containing $\mathbb{Q}$ are as follows. $\zeta=e^{\pi i/4}$.
 
-![](./fig1.png)
-![](./fig2.png)
+![](../Images/Abstract_Algebra/fig1.png)
+![](../Images/Abstract_Algebra/fig2.png)
 
 (a) There are a missing subfield of $K$ in the lattice. What is it?\
 (b) Is $K/\mathbb{Q}((1+i)\sqrt[4]2)$ and $K/\mathbb{Q}(i,\sqrt{2})$ Galois? If yes, determine their Galois groups; if no, explain why.\
