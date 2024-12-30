@@ -1,5 +1,5 @@
 # General Physics 2024 Spring Midterm
-## General Informations
+## General Information
 - **Date**: 2024-06-16
 - **Time**: 14:30-16:45
 - **Calculater is allowed**
