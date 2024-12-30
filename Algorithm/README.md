@@ -14,3 +14,10 @@ This course is a course for sophomore. However, it is the prerequisite for some 
 The ones who have OI certificate (NOIP-1 or other equivalent prize)can skip some HW problems.
 
 Notes: Always write something if you can't answer the questions. There are many unexpected partial points, even for trivial statements.
+
+## Logics in 2024
+
+- HW: 25%
+- Survey : 25%
+- Midterm: 0%
+- Final: 50%
