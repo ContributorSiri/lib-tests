@@ -1,0 +1,157 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\begin{document}
+\title{Computer Architecture Final 2024}
+\author{Hanzuo Liu, Kunxiao Qian}
+\date{\today}
+\maketitle
+\section*{Problem 1 True or False}
+\subsection*{Part A}
+3 pts each.
+\subsubsection*{1}
+Prefetch can not accelerate some data structures such as tree etc.
+\subsubsection*{2}
+Raise NotImplementedError()
+\subsubsection*{3}
+Double the cache capacity will always decrease the miss rate.
+\subsubsection*{4}
+Oblivious data algorithm could solve the problem of traditional prime-probe attack.
+\subsubsection*{5}
+physical register file could be a potential side channel
+\subsubsection*{6}
+Raise NotImplementedError()
+\subsubsection*{7}
+GPU will load the frequently accessed data in on-chip shared memory, at some time, this will harm the performace.
+\subsection*{Part B}
+4 pts.\\
+list at least 4 design philosiphies of computer architecture mentioned in class.
+\section*{Problem 2 In theory, theory and practice are the same}
+\subsection*{Part A}
+WriteBack(addr): if the addr is dirty, write back, otherwise nothing. In both case, cacheline is still valid.\\
+Invalidate(addr): invalidate the cacheline. If dirty, write back.\\
+\begin{lstlisting}[language=C]
+//Thread 1
+a = 1;
+flag = 1;
+\end{lstlisting}
+\begin{lstlisting}[language=C]
+//Thread 2
+while(flag == 0){}// waiting
+print a;
+\end{lstlisting}
+\subsubsection*{1}
+if we use write-through as our replacement policy. Modify the code to make it work without introducing any unneccessary performance loss.\\
+\subsubsection*{2}
+change the write-through to write-back in the \textbf{1}, redo the problem.
+\subsection*{Part B}
+\textbf{This part is totally same as the sample exam problem 4 part A}.\\
+After graduation, you start to work in a large Bird company. You are asked by your manager to 
+analyze the performance of a computer machine in the lab. The machine uses a normal multicore
+ processor with multi-level caches, and the main memory uses DRAM. Specifically, you 
+need to measure the sequential and random data access bandwidth of the DRAM memory. 
+You do not need to worry about the file system storage or virtual memory in this problem. 
+\subsubsection*{1}
+You manager \texttt{Big Bird} says that he expects the random bandwidth of DRAM to be much 
+lower than the sequential bandwidth. Why would he expect such a result? Use the DRAM 
+system structures and organizations we learned in class to provide a reason.
+\subsubsection*{2}
+However, after actual measurement, you find that the DRAM random access 
+bandwidth is very close to the sequential bandwidth, with very small difference. The 
+programs you use access the same amount of data that fit in the main memory, only with 
+different access patterns (sequential vs. random). You have also confirmed that the accesses 
+to the DRAM, i.e., the misses from the last-level cache, are indeed sequential and random in 
+the two programs, and so it is not because of the caches. Use the DRAM system structures 
+and organizations we learned in class, provide two reasons to convince your team leader that 
+the result is explainable.
+\section*{Problem 3 Fun with Memories}
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Something & Some other thing  \\
+\hline
+Virtual Address & 48 bits  \\
+Physical Address & 36 bits \\
+Page Size & 4KB \\
+Addressing & Byte addressing \\
+\hline
+\end{tabular}
+\label{meomory}
+\end{table}
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Items & TLB-I & TLB-D & L1-I & L1-D & L2 \\
+\hline
+Capacity & 32 entries & 128 entries & 8kB & 32kB & 2MB \\
+Assocaiativity & fully-associate & fully-associate & direct-mapped & 4-way & 8-way \\ 
+Block Size & N/A & N/A & 64bytes & 64bytes & 64bytes \\
+\hline
+\end{tabular}
+\label{sizes}
+\end{table}
+\subsection*{Part A}
+Calculate the Tag, Index(for caches), Offset and table lines/sets of TLB-D, LI-D, L2. In the exam, you should fill the table.
+\subsection*{Part B}
+\subsubsection*{1}
+In reality, what is the minimal number of SRAM bits for L1-I.
+\subsubsection*{2}
+Double the block size and recalculate the result in \textbf{1} ,capacity and associativity keeps same.
+\subsubsection*{3}
+After concluding the latency Result, \texttt{Bird} conclude them into a table shown as below.
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+TLB latency & TLB miss penalty & L1-D latency & L2 latency & Memory Latency \\
+\hline
+2  & 50  & 3 & 10 & 100 \\
+\hline
+\end{tabular}
+\end{table}
+\begin{lstlisting}[language=C]
+#define D 4096
+uint32_t bird[5*D];
+for(int i=0;i<1000000;i++){
+    for(int j=0;j<D;j+=1){
+        bird[j] = bird[j+D]+bird[j+2*D]+bird[j+3*D]+bird[j+4*D];
+    }
+}
+\end{lstlisting}
+Note that since we avoid the cold miss at the begining of the program, we will run enough loops and you only need to calculate the non-compulsory misses for \texttt{Bird}.\\
+Remind that you should check whether TLB and Cache could work concurrently, if yes, use the max value of them. Otherwise, use the sum of them.\\
+calcuate the AMAT for \texttt{Mr.Bird}.
+\section*{Algorithm Design}
+Now we focus on a $N=n*n$ mesh(you may google to find what shape it is since it is hard to plot). Every link has only 1 virtual channel.
+\subsection*{Part A}
+Identify whether the following policies are dead-lock free, and provide a proof.\\
+\subsubsection*{1}
+We choose a minimal path at random sequence of first $X$ then $Y$ or first $Y$ then $X$.
+\subsubsection*{2}
+Less on random, diliver a message from $(x_1,y_1)\to(x_2,y_2)$. If $x_2>x_1,y_2>y_1$, then first $X$ then $Y$. If $x_2<x_1,y_2<y_1$, then first $Y$ then $X$. Other wise random deliver.
+\subsubsection*{3}
+See the PPT. Hard to describe.
+\subsection*{Part B}
+Now we focus on a 3*3 mesh.
+\subsubsection*{1}
+Each point randomly deliver message to all points, calculate the average distance.
+\subsubsection*{2}
+label the point with row major($0\to 8$), calculate the average distance.
+\subsubsection*{3}
+Is there a better permutation for the labels that has a smaller average distance? If yes, find it. If no, prove it.
+\section*{Problem 5 Bird}
+A true master should not only good at do the problem, but also good at predict his score. Give a prediction of your score, you will receive a bouns point if your point is in $\pm 5$.\\
+\end{document}
