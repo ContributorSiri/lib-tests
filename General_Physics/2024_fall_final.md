@@ -46,4 +46,4 @@
    - Determine the speed of the plane wave $v_g$ in the waveguide and the speed of point $C$, $v$. ($C$ is the intersection of the wavefront and the wall) $v$.
    - These speeds correspond to the group speed and phase speed of the wave, respectively. Use the dispersion relation from (a) to calculate $v_g = \frac{\text{d}\omega}{\text{d}k_z}$ and $v = \frac{\omega}{k_z}$.
 
-   ![Figure 1](2024_fall_final_image-1.jpg)
+   ![Figure 1](../Images/General_Physics/2024_fall_final/image-1.jpg)
