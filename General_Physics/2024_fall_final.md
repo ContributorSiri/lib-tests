@@ -23,3 +23,27 @@
    (b) Given the equation for the energy dissipation rate of a surface,
    $$P_{dis} = \frac{1}{2} \int_{S} \frac{|\alpha|^2}{\sigma_s} dS,$$
    where $\alpha$ is the electric current density on the surface, calculate $P_{dis}$ for the resonator.
+
+7. Consider a square waveguide made of an ideal conductor with side length $L$. The axis is along the $z$ direction. We focus on the modes where 
+
+   $$E_x = E_0 \sin\left(\frac{m\pi y}{L}\right) \sin(kz - \omega t),$$ 
+
+   with $E_y = E_z = 0$, and $B$ is perpendicular to $E$, implying $B_z = 0$.
+
+   (a) Derive the dispersion relation $\omega(k)$ for this mode, which describes the relationship between $\omega$ and $k$.
+
+   (b) Calculate $B_y$ and $B_z$ for this mode. Determine the surface charge density and surface current density on the waveguide walls using the boundary conditions.
+
+   (c) Suppose the waveguide is cut into two halves along the $y = \frac{L}{2}$ plane, where the halves remain adjacent but unconnected, preventing any surface current across the cut. Derive the new dispersion relation $\omega'(k)$. If the waveguide is cut along the $x = \frac{L}{2}$ plane instead, what are the allowed modes?
+
+8. Consider a square waveguide with side length $L$. The axis is along the $z$ direction. We consider all TE and TM modes in the waveguide.
+
+   (a) Calculate the possible $k_x$ and $k_y$ values for the modes and derive the dispersion relation $\omega(k_z)$.
+
+   (b) We use another method to understand the modes in the waveguide. Figure 1 shows a cross-section of the waveguide perpendicular to the $y$-axis. A plane wave with wavevector $\vec{k} = (k_x, k_y, k_z)$ propagates in the waveguide and reflects off the walls. A wave is allowed only if points $A$ and $B$ in the figure are in the same phase ($\phi_B = \phi_A + 2m\pi$).
+
+   - Calculate the allowed $k_x$ and $k_y$ values for the plane wave (_hint:_ use $\text{d}\phi = \vec{k} \cdot \text{d}\vec{l}$).
+   - Determine the speed of the plane wave $v_g$ in the waveguide and the speed of point $C$, $v$. ($C$ is the intersection of the wavefront and the wall) $v$.
+   - These speeds correspond to the group speed and phase speed of the wave, respectively. Use the dispersion relation from (a) to calculate $v_g = \frac{\text{d}\omega}{\text{d}k_z}$ and $v = \frac{\omega}{k_z}$.
+
+   ![Figure 1](2024_fall_final_image-1.jpg)
