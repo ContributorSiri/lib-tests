@@ -1,3 +1,38 @@
+# 2024 Fall Final
+
+1. Short answer questions.
+
+   a) Consider two parallel wires on a plane. Is the force between them attractive or repulsive if their currents are of the same direction? What if their currents are of opposite direction? Now consider the case when there's an angle $\theta\ (0<\theta<\frac{\pi}{2})$ between two wires. Will this angle increase or decrease at the next moment?
+
+   b) Consider the two cylindrical solenoid shown in Figure 1.2. One is nested in the other. Solenoid 1 has number of turns $N_1$, current $I_1$ and radius $r_1$; solenoid 2 has number of turns $N_2$, current $I_2$ and radius $r_2$. Derive the electromotive force (EMF) for 1 and 2 respectively. (You can use the time derivative of $I$.)
+
+   ![Figure 1.2](../Images/General_Physics/2024_fall_final/solenoid.jpg){width=50%}
+
+   c) Use scalar potential $\phi$ and vector potential $\vec{A}$ to express $\vec{E}$ and $\vec{B}$. Then derive the two equations of $\vec{A}$, $\vec{J}$ and $\phi$, $\rho$.
+
+   d) The infinite impedance network shown in Figure 1.4 has total impedance $Z=\frac{z_1}{2}+\sqrt{\frac{z_1^2}{4}+z_1z_2}$. If $Z=|1|$, the signal can propagate along the network; if $Z<1$, the signal will eventually vanish. Show how to use two networks to get a propagation system with upper cut-off frequency $\omega_h$ and lower cut-off frequency $\omega_l$.
+
+   ![Figure 1.4](../Images/General_Physics/2024_fall_final/network.jpg){width=60%}
+
+2. As shown in Figure 2, a circular coil is placed beside an infinitely-long straight wire with current $I$. The circle has radius $a$ and its center is of distance $b$ from the wire. Now move the circle with velocity $v$. Calculate the electromotive force (EMF) in the coil.
+
+   You may use the intigration $\int \frac{d\theta}{b+a\cos \theta}=-\frac{1}{\sqrt{b^2-a^2}}\arcsin \frac{a+b\cos \theta}{b+ a\cos \theta}+C$.
+
+   ![Figure 2](../Images/General_Physics/2024_fall_final/coil.jpg){width=50%}
+
+3. 
+
+   a) Calculate the resistance between point A and point B (shown in Figure 3.1).
+
+   ![Figure 3.1](../Images/General_Physics/2024_fall_final/resistance.jpg){width=60%}
+
+   b) Given the circuit and current $i_0\sin \omega t$ (shown in Figure 3.2),
+
+   * Calculate the peak voltage of the meter.
+   * Simplify the result respectively when $\omega$ is very small and very large.
+
+   ![Figure 3.2](../Images/General_Physics/2024_fall_final/circuit.jpg){width=60%}
+
 4. Consider an infinitely long cylinder of radius $R$, permanently polarized with polarization $\textbf{P} = \alpha \textbf{r}$, where $\textbf{r}$ is the radial vector. The cylinder rotates about its axis with angular velocity $\omega$, where $\omega R \ll c$. Neglect all relativistic effects.
    
    (a) Calculate the electric field $\textbf{E}$ and the magnetic field $\textbf{B}$ both inside and outside the cylinder.
