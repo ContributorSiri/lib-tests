@@ -27,8 +27,6 @@
 20. EBM is hard to scale-up because the restriction of the model structure.
 21. Gibbs Sampling is a special case of the MH algorithm, where the acceptance rate is always 1.
 22. We want to fit a multimodal distribution by normal distribution and using KL loss function, but this results in collapsing to one mode. Change the loss function to JSD can fix this problem.
-
-(I can only remember this much... QWQ)
 # 2. Short Response Questions(2pts+(4+2)pts+2pts=10pts)
 
 1. After training a VQ-VAE, can we sample the latent $z$ from a uniform distribution and do generation? If not, what should we do?

@@ -1,5 +1,3 @@
-# Intro to CS(计入门)
+# Introduction to Computer Science (计算机入门)
  
-This course is the requirement course for freshman. The contents are:
-
-1. Final exam of 2023 fall semester.
+- This course is the requirement course for freshman.
