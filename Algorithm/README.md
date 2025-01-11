@@ -17,6 +17,8 @@
     - Midterm: 0% (only serving as a mock test for final)
     - Final: 50%
 
-> A lesson from seniors:
+> A lesson from the seniors:
 > 
 > Always write something if you can't answer the questions. There are many unexpected partial points, even for trivial statements.
+
+- **Cheatsheets**: [cs_2024_lhz](cheatsheet/cs_2024_lhz.pdf) by [liuhanzuo](https://github.com/liuhanzuo).
