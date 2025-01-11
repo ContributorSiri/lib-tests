@@ -7,7 +7,7 @@
 1. $\int_{0}^{2024}(x-[x])\text{d} x=\underline{\qquad}$ .(这里 $[x]$ 代表不超过 $x$ 的最大整数)。
 2. 求微分方程 $y''-y=x$ 的通解 $\underline{\qquad}$.
 3. 计算广义积分 $\int_{1}^{+\infty}\frac{2\text{d}x}{x(1+x^2)}=\underline{\qquad}$ .
-4. 求平面区域 $\{0\le y\le \sqrt{\sin x},0\le x\le\pi\}$ 绕$x$轴旋转一周所得旋转体的体积 $\underline{\qquad}.$
+4. 求平面区域 $\{0\le y\le \sqrt{\sin x},0\le x\le\pi\}$ 绕 $x$ 轴旋转一周所得旋转体的体积 $\underline{\qquad}.$
 5. 求 $y=x\ln(e+\frac{1}{x})$ 在 $(1,+\infty)$ 的渐近线 $\underline{\qquad}.$
 6. 求心脏线 $\rho=1+\cos\theta(0\le \theta\le 2\pi)$ 的面积 $\underline{\qquad}$.
 7. 求极限 $\lim\limits_{x\rightarrow 0}\frac{\int_{0}^{3x}\ln(1+t^2)\text{d}t}{x^3}=\underline{\qquad}$.
