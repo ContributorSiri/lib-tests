@@ -48,4 +48,4 @@
 - $\varphi(x):=\ln f(x)$ 是下凸函数.
 
 求证：当 $0<x<1$ 时,
-$$f(x)=\lim_{n\to +\infty} \dfrac{n^x\cdot n!}{(x+1)\cdots(x+n)}.$$
+$$f(x)=\lim_{n\to +\infty} \dfrac{n^x\cdot n!}{x(x+1)\cdots(x+n)}.$$
