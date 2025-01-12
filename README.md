@@ -31,7 +31,7 @@ To maintain a great structure of the repo, we recommend you to check the followi
 - You may also change `README.md` to update course descriptions, instructors, and logistics in each year. We recommend you to write a `README.md` (refer to other `README` for the format) when adding a new course.
 - For cheatsheets, `.docx` (not recommended) and `.pdf` are also acceptable. We highly recommend you to check the following:
     - you should upload your cheatsheet inside the `cheatsheet/` subfolder in the folder of the correct course. 
-    - you may name your cheatsheet file as `cs_<year>_<name>.<file_type>` (for instance, `cs_2024_jason.tex`).
+    - you may name your cheatsheet file as `cs_<year>_<name>.<file_type>` (for instance, `midterm_cs_2024_jason.tex` or `cs_2023_yqz.md`).
     - you may change `README.md` in the course folder to record your contribution.
 - DO NOT UPLOAD:
     - $\LaTeX$ compiling files `.aux`, `.log`, etc.;
@@ -45,6 +45,7 @@ To maintain a great structure of the repo, we recommend you to check the followi
 4. Before you do the exam problems, please check out the **issues** for possible corrections of the files. Sometimes we may be too busy (or lazy) to modify them.
 
 ## Important Updates
+
 The management of this repo is currently given to [Peppaking8](https://github.com/peppaking8) 🎉. Hope that more people in the IIIS can join this wonderful project!
 
-`lib-tests` have merged with [liuhanzuo](https://github.com/liuhanzuo)'s [repository](https://github.com/liuhanzuo/lib-shit) 🎉! You can now upload your **cheatsheet** at here!
+`lib-tests` has merged with [liuhanzuo](https://github.com/liuhanzuo)'s repo storing exam cheatsheets 🎉. You can now upload your own **cheatsheet** at here!
