@@ -12,6 +12,16 @@ A library for saving midterm and final exams of IIIS (Institute for Interdiscipl
 > 
 > If you still don't know what it is about-well, we don't understand as well! :)
 
+## Advertisement on the Spring Semester
+
+Since there are few contributors who take **Quantum Information** and **Theoretical Computer Science** classes, we are urgently calling for the exam of the following courses:
+
+- Quantum Computer Science (QCS, 量子计算机科学)
+- Theory of Computation (计算理论)
+- Game Theory (博弈论)
+
+Thanks for your attention! After you contribute by _pull request_, please contact to [@PeppaKing8](https://github.com/PeppaKing8) for a meal :)
+
 ## Disclaimer
 
 **All uploaded exam questions are from students' memories or public documents. For students who are about to upload new exam questions or answers, please do not violate the university's exam confidentiality regulations.**
