@@ -34,7 +34,7 @@ with $\hat{a} , \hat{a^\dagger} (\hat{b} , \hat{b^\dagger})$ being the annihilat
 
 (2) Suppose the initial state of the system is $|n,0\rangle$. From the conclusion of question(1), the state after the evolution is in the subspace spanned by $|n-k,k\rangle$, which we denote by $|\bar k\rangle$. Write down $H$ in terms of $\sum_{i,j} H_{ij} |\bar i\rangle \langle \bar j|$.
 
-(3) Consider a system consist of $n$ qubits. Define the symmetry subspace $\mathcal{H}_{sym}$ where permutes any of the qubits does not change the state (and will not introduce a global phase). For example, $\frac{1}{\sqrt{2}} (|00\rangle+|11\rangle)$ is in the symmetric subspace, but $|10\rangle$ is not, since exchanging the two qubits gives $|01\rangle$. Let $\psi_k\in \mathcal{H}_{sym}$ being the *normalized* eigenstates of $\sum \frac{1}{2} (I-Z_i) with eigenvalue $k$. Write down $\psi_k$ in terms of the sum of computational basis.
+(3) Consider a system consist of $n$ qubits. Define the symmetry subspace $\mathcal{H}_{sym}$ where permutes any of the qubits does not change the state (and will not introduce a global phase). For example, $\frac{1}{\sqrt{2}} (|00\rangle+|11\rangle)$ is in the symmetric subspace, but $|10\rangle$ is not, since exchanging the two qubits gives $|01\rangle$. Let $\psi_k\in \mathcal{H}_{sym}$ being the *normalized* eigenstates of $\sum \frac{1}{2} (I-Z_i)$ with eigenvalue $k$. Write down $\psi_k$ in terms of the sum of computational basis.
 
 (4) Define a Hamiltonian on $n$ qubits
 $$
@@ -80,6 +80,6 @@ H=\frac{1}{2} \hbar \delta \sigma_z.
 $$
 Show that after a spin echo sequence, the final state is independent of $\delta$.
 
-(2) Now, if the qubit has no frequency offset($\delta=0$), but is subject to a phase damping channel described by jump operator $L=\sqrt{\gamma} \sigma_z$. Show that after a spin echo sequence, the final state is no longer a pure state
+(2) Now, if the qubit has no frequency offset ($\delta=0$), but is subject to a phase damping channel described by jump operator $L=\sqrt{\gamma} \sigma_z$. Show that after a spin echo sequence, the final state is no longer a pure state.
 
-(3) From the above calculation, what type of nois eis spin echo more effective at suppressing? Slow-varying frequency drift or white-noise frequency noise? Give your reasons.
+(3) From the above calculation, what type of noise is spin echo more effective at suppressing? Slow-varying frequency drift or white-noise frequency noise? Give your reasons.

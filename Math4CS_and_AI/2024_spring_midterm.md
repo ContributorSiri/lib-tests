@@ -35,7 +35,6 @@ $$
 $$
 
 ## Problem 3 (40 pts)
-*Side note: this problem is from the homework of Math for CS, 2023 spring.*
 
 Let  $n \geq m>0$ be integers. A binary string  $u=u_{1} u_{2} \cdots u_{n}$ is said to contain  $v=v_{1} v_{2} \cdots v_{m}$ as a substring if there exists an integer  $i$ (where $0 < i \le n-m+1$ ) such that  $u_{i}=v_{1}, u_{i+1}=v_{2}, \cdots, u_{i+m-1}=v_{m}$ . For example, 110100 contains 101 as a substring (with  $i=2$  ), while the string 001100 does not contain 101 as a substring.
 
