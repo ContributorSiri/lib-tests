@@ -19,6 +19,7 @@ Since there are few contributors who take **Quantum Information** and **Theoreti
 - Quantum Computer Science (QCS, 量子计算机科学)
 - Theory of Computation (计算理论)
 - Game Theory (博弈论)
+- Cryptography (密码学)
 
 Thanks for your attention! After you contribute by _pull request_, please contact to [@PeppaKing8](https://github.com/PeppaKing8) for a meal :)
 
