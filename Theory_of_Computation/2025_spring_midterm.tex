@@ -1,0 +1,94 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amsthm, amssymb, bm, color, framed, graphicx, hyperref, mathrsfs, fancyhdr, circledsteps, bookmark}
+\usepackage[margin=1in]{geometry}
+\usepackage{pdfpages}
+
+\title{\textbf{Theory of Computation, Midterm 2025}}
+\date{2025.4.8}
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+\setlength{\headheight}{13.6pt}
+\cfoot{\thepage}
+
+\geometry{headsep=0cm, footskip=1cm}
+
+\DeclareMathOperator{\e}{e}
+\DeclareMathOperator{\E}{E}
+\DeclareMathOperator{\Var}{Var}
+\newcommand{\A}{\mathscr{A}}
+\newcommand{\B}{\mathscr{B}}
+\newcommand{\C}{\mathscr{C}}
+
+\begin{document}
+
+\maketitle
+
+Close-book exam, time: $1:30\sim 3:30$ pm.
+
+\textbf{Choose $6$ of the following $7$ problems to solve, each problem worth $10$ points.}
+
+\section*{Problem 1}
+
+Suppose $\Sigma=\{0,1\}$, and let 
+$$L=\{s\mid \text{each consecutive substring of } s \text{ with length } 4 \text{ contains at least two 0's}\}.$$
+
+Construct a regular language, or a DFA, or an NFA, that accepts just $L$, and explain your idea.
+
+\section*{Problem 2}
+
+Suppose $\Sigma=\{a,b\}$, and let $L=\{a^nb^na^n\mid n\ge 0\}$.
+
+\begin{enumerate}
+	\item Show that $L$ is not context-free.
+	\item Construct a CFG or a PDA that accepts just $\overline{L}$, and explain your idea.
+\end{enumerate}
+
+\section*{Problem 3}
+
+Determine whether the following languages are decidable:
+
+\begin{enumerate}
+	\item $L=\{\langle M\rangle \mid \text{for any input } x \text{, } M(x) \text{ halts in no more than } 2^{\lvert x\rvert} \text{ steps}\}$.
+	\item $L=\{\langle M\rangle \mid \text{for any input } x \text{, } M(x) \text{ halts in no more than } 2^{\lvert M\rvert} \text{ steps}\}$, where $\lvert M\rvert$ denotes the number of states of the TM $M$.
+\end{enumerate}
+
+\section*{Problem 4}
+
+Show that for any two languages $A,B$, there is a language $J$ such that $A\le_{\mathrm{T}} J$ and $B\le_{\mathrm{T}} J$.
+
+\section*{Problem 5}
+
+Let $p_i$ denotes the $i$-th prime number. Show that there is a constant $c$ such that $p_i\le cn\log^2 n$ for infinite number of $i$'s.
+
+Hint: Remind that incompressible string of every length exists.
+
+\section*{Problem 6}
+
+When $M$ is a TM satisfying that $L(M)$ is finite, and $M$ halts on all inputs, let $f(\langle M\rangle)$ denote an upper bound of $\lvert L(M)\rvert$. Show that $f$ cannot be recursive.
+
+Hint: Consider the Kleene's recursion theorem.
+
+\section*{Problem 7}
+
+(Derandomization.) Consider the dynamic partial sum problem, we generate a ``hard instance'' as follows: randomly generate a permutation $\pi=\langle \pi_1,\pi_2,\dots,\pi_n\rangle$, at time $t\in [1,n]$, perform $\operatorname{modify}(\pi_t,\Delta_t)$ and $\operatorname{query}(\pi_t)$, where $\Delta_t$ is a random scalar in $G$. 
+
+Then, we define $\operatorname{IL}(t_0,t_1,t_2)$ as the number of information interleaves between time intervals $[t_0,t_1]$ and $[t_1,t_2]$. Suppose $t_1-t_0=t_2-t_1$, if we sort $\langle \pi_{t_0},\dots,\pi_{t_2}\rangle$ in increasing order, for each pair of adjacent $(\pi_i,\pi_j)$, if $i<t_1$ and $j>t_1$, this is an information interleave.
+
+\begin{enumerate}
+	\item Consider two time intervals $[t_0,t_1]$ and $[t_1,t_2]$, which $t_1-t_0=t_2-t_1$, prove that $\E[\operatorname{IL}(t_0,t_1,t_2)]\ge c(t_2-t_0)$ for some positive constant $c$.
+	\item If we have a permutation $\pi'$ of length $k$, we construct a permutation $\pi$ such that
+	$$
+	\pi=\langle 2\pi'_1-1,2\pi'_2-1,\dots,2\pi'_k-1,2\pi'_1,2\pi'_2,\dots,2\pi'_k\rangle.
+	$$
+	Show that $\operatorname{IL}(1,k+\frac{1}{2},2k)=\Omega(k)$.
+	\item Suppose $n=2^i$, we recursively construct a permutation $\pi$ of length $n$ as described above, and build a partition tree, each time partitioning into two equal parts. Show that, in this partition tree $T$,
+	$$
+	\sum_{u\in T} \operatorname{IL}(u)=\Omega(n\log n).
+	$$
+\end{enumerate}
+
+\end{document}
