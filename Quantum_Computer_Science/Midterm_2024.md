@@ -1,6 +1,6 @@
 # Quantum Computer Science, Spring 2024 - Midterm
 
-2024.04.25 9:50 - 12:35, 6A117
+- **Date and Time**: 2024.04.25, 9:50 - 12:35.
 
 Please explicitly write down the derivation process of each problem, otherwise you might lose some marks. You are allowed to use results from homework without proving them, as long as you CLEARLY state what results you used.
 
