@@ -39,4 +39,26 @@ Same as Problem 4 in **2024 Midterm**.
 
 Same as Problem 5 in **2024 Midterm**.
 
-## Problem 6 ($20+5$ pts)
+## Problem 6 Transformation Between Pictures ($20+5$ pts)
+
+The Schrodinger picture of a quantum system describes the evolution as
+$$i\hbar \frac{\partial}{\partial t}|\phi(t)\rangle_S=\hat{H}|\phi(t)\rangle_S,$$
+while the Heisenberg picture models it as
+$$\frac{d}{dt}A(t)_H=\frac{i}{\hbar}[A(t)_H,\hat{H}].$$
+Now, we consider the **interaction picture**, which is different from the two pictures.
+
+1. for a potential $V(\hat{x}(t))$ which only depend on the particle's position $x$, the Hamiltonian for the particle can be written as
+    $$H=\frac{\hat{p}^2}{2m}+V(\hat{x}(t)).$$
+    Prove the Ehrenfest theorem ($10$ pts):
+    $$\langle m\frac{d^2}{dt^2}\hat{x}(t)\rangle=-\langle\nabla V(\hat{x}(t)) \rangle.$$
+2. Consider a system with the Hamiltonian $H=H_0+H_1$, where $H_1$ is relatively small compare to $H_0$ and $H_0$ is independent of time. Here, $H_1$ can be interpreted as a "preturbation". Consider the following interaction picture:
+    $$|\phi(t)\rangle_{I}=e^{\frac{i\hat{H}_0t}{\hbar}}|\phi(t)\rangle_S,$$
+    $$A(t)_I=e^{\frac{i\hat{H}_0t}{\hbar}}A(t)_Se^{-\frac{i\hat{H}_0t}{\hbar}}.$$
+    Derive the equation of $|\phi(t)\rangle_I$ and $A(t)_I$ under the time evolution.
+3. Consider the following system: an atom of three energy level $(a,b,c)$ is in a cavity and coupling with a photon which is in possibly two modes, with frequency $\nu_1,\nu_2$, and the total state of the system in general has the following form:
+    $$|\phi\rangle=c_1(t)|a\rangle|0\rangle|0\rangle+c_2(t)|b\rangle|1\rangle|0\rangle+c_3(t)|c\rangle|0\rangle|1\rangle.$$
+    The hamiltonian of the system without coupling between the atom and the photon is
+    $$H_0=\hbar\omega_1|a\rangle\langle a|+\hbar\omega_2|b\rangle\langle b|+\hbar\omega_3|c\rangle\langle c|+\hbar\nu_1a^{\dagger}_1a_1+\hbar\nu_2a^{\dagger}_2a_2.$$
+    The coupling between the atom and the photon only allows transition between energy level $a$ and $b$, and energy level $a$ and $c$. Thus, the interaction Hamiltonian can be written as:
+    $$H_I=\hbar g_1(|a\rangle\langle b|a_1+|b\rangle\langle a|a^{\dagger}_1)+\hbar g_2(|a\rangle\langle c|a_2+|c\rangle\langle a|a^{\dagger}_2).$$
+    Now we consider a system that stays in $c_1(t)=0$ for a long period of time. We call the state a "dark state". Derive the probability to find the atom in state $|b\rangle$ and $|c\rangle$ respectively when observing a system that is in a dark state. ($5$ pts, **bonus**)
