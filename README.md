@@ -14,12 +14,11 @@ A library for saving midterm and final exams of IIIS (Institute for Interdiscipl
 
 ## Advertisement on the Spring Semester
 
-Since there are few contributors who take **Quantum Information** and **Theoretical Computer Science** classes, we are urgently calling for the exam of the following courses:
+We are urgently calling for the **midterm exam** of the following courses:
 
-- Quantum Computer Science (QCS, 量子计算机科学)
-- Theory of Computation (计算理论)
 - Game Theory (博弈论)
 - Cryptography (密码学)
+- General Physics I (普通物理 I)
 
 Thanks for your attention! After you contribute by _pull request_, please contact to [@PeppaKing8](https://github.com/PeppaKing8) for a meal :)
 
