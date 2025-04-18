@@ -3,11 +3,11 @@ A library for saving midterm and final exams of IIIS (Institute for Interdiscipl
 
 > _A passage from the first repo manager [ContributorSiri](https://github.com/ContributorSiri):_
 > 
-> You may ask what is IIIS? It is a mysterious place--
-> - where all the classes are taught in English
-> - where the Student's Day in 2023 has something to do with [ChatGPT](chat.openai.com)
-> - where some students can publish their first paper in the freshman year
-> - where calculating the SVD for a $4\times 5$ matrix is a kind of entertainment for the freshman
+> You may ask what is IIIS? It is a mysterious place where--
+> - all the classes are taught in English
+> - the Student's Day in 2023 has something to do with [ChatGPT](chat.openai.com)
+> - some students can publish their first paper in the freshman year
+> - calculating the SVD for a $4\times 5$ matrix is a kind of entertainment for the freshman
 > - ...
 > 
 > If you still don't know what it is about-well, we don't understand as well! :)
