@@ -1,4 +1,4 @@
-# Intro to Computer Systems Midterm 2024 Spring
+# Intro to Computer Systems: 2024 Spring Midterm
 ## General Information
 - **Date**: 2024-04-19
 - **Duration**: In class, but append 5 minutes (9:50 - 12:20)

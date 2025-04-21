@@ -18,7 +18,7 @@ We are urgently calling for the **midterm exam** of the following courses:
 
 - Game Theory (博弈论)
 - Cryptography (密码学)
-- General Physics I (普通物理 I)
+- Introduction to Computer Systems (计算机系统概论)
 
 Thanks for your attention! After you contribute by _pull request_, please contact to [@PeppaKing8](https://github.com/PeppaKing8) for a meal :)
 
