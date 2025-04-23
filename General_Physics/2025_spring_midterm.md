@@ -3,6 +3,8 @@
 - **Time Limit**: $120$ minutes.
 - The total score is $110$ points, including $10$ bonus points.
 
+- **Image Credit: Kunxiao Qian**.
+
 ## Problem 1 ($5+5+5+5=20$ pts)
 
 1. Write down the frequency ratio $\omega_x:\omega_y$ for the following Lissajous curves.

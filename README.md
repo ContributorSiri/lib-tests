@@ -14,11 +14,15 @@ A library for saving midterm and final exams of IIIS (Institute for Interdiscipl
 
 ## Advertisement on the Spring Semester
 
-We are urgently calling for the **midterm exam** of the following courses:
+We are urgently calling for the **MIDTERM of 2025 Spring Semester** of the following courses:
 
 - Game Theory (博弈论)
 - Cryptography (密码学)
 - Introduction to Computer Systems (计算机系统概论)
+
+Also, we are calling for the **ANSWERS** (both official or unofficial) of the previous uploaded exams. 
+
+For the contribution standard, please refer to [How to Contribute](#how-to-contribute).
 
 Thanks for your attention! After you contribute by _pull request_, please contact to [@PeppaKing8](https://github.com/PeppaKing8) for a meal :)
 
@@ -37,6 +41,7 @@ We welcome everyone in IIIS to upload **exam papers, answers, and cheatsheets**!
 To maintain a great structure of the repo, we recommend you to check the following things before _pull request_:
 
 - Your exam papers or answers should in either `.md` (recommended), `.tex`, or `.pdf` (not recommended but OK) format.
+    - **IMPORTANT**: If you want to upload an exam answer, please clarify it in the name of the file (for instance, `2025_spring_midterm-answer.md`). If your answer is unofficial, please state it clearly in your file.
 - All the images should be added correctly in `./Images`. It should not appear in the subfolders of any course.
 - You may also change `README.md` to update course descriptions, instructors, and logistics in each year. We recommend you to write a `README.md` (refer to other `README` for the format) when adding a new course.
 - For cheatsheets, `.docx` (not recommended) and `.pdf` are also acceptable. We highly recommend you to check the following:
