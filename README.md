@@ -16,9 +16,9 @@ A library for saving midterm and final exams of IIIS (Institute for Interdiscipl
 
 We are urgently calling for the **MIDTERM of 2025 Spring Semester** of the following courses:
 
-- Game Theory (博弈论)
-- Cryptography (密码学)
-- Introduction to Computer Systems (计算机系统概论)
+- Game Theory (博弈论) (All problems)
+- Cryptography (密码学) (All problems)
+- Introduction to Computer Systems (计算机系统概论) (Missing some problems)
 
 Also, we are calling for the **ANSWERS** (both official or unofficial) of the previous uploaded exams. 
 

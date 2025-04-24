@@ -145,7 +145,7 @@ Different scheduling policies give different process execution order. Consider a
     | 7            | C   |  ? |   ?|
     | 8            | C   |  ? |   ?|
     | 9            | D  |   ?|   C|
-    | 10            | D  |  ? |  ? |
+    | 10            | D  |  D |  ? |
 
 
 2. The time-to-first-token (TTFT) is a criterion for a LLM server. Suppose now that each process is a user calling for a reply of the LLM, and during each timeslice, the ongoing process will output 1 token at the end of the timeslice. The TTFT of this process is defined as the difference between the arrival time and the time to generate the first token. Please calculate the **average TTFT** of four processes for each scheduling policy. Which policy gives the worst TTFT and which one gives the best? Does this performance order always hold? Please explain why.
