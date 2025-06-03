@@ -40,7 +40,7 @@
 
 # 3. Back Propagation of Attention (2pts+4pts+3pts=9pts)
 
-Suppose $x_i(1\le i \le n)$ are inputs of d-dimension and the q-k-v vectors are calculated by $q_i = W_Q x_i$, $k_i = W_K x_i$, $v_i = W_V x_i$. The attention weight is $\alpha_{ij}=\frac{\exp(q_i^Tk_j)}{\sum_t{q_i^Tk_t}}$, and $y_j=\sum \alpha_{ij} v_j$. Let $L$ be a scalar loss function.
+Suppose $x_i(1\le i \le n)$ are inputs of d-dimension and the q-k-v vectors are calculated by $q_i = W_Q x_i$, $k_i = W_K x_i$, $v_i = W_V x_i$. The attention weight is $\alpha_{ij}=\frac{\exp(q_i^Tk_j)}{\sum_t\exp(q_i^Tk_t)}$, and $y_j=\sum \alpha_{ij} v_j$. Let $L$ be a scalar loss function.
 
 1. Compute $\frac {\partial L}{\partial v_i}$ and $\frac {\partial L}{\partial \alpha_{ij}}$, given $\frac {\partial L}{\partial y_j}$
 1. Compute $\frac {\partial L}{\partial q_i}$ and $\frac {\partial L}{\partial k_i}$, given $\frac {\partial L}{\partial \alpha_{ij}}$
