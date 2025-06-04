@@ -36,7 +36,7 @@
 
 (2) Suppose we have another dataset without labels, show the training process now for VAE and GAN using both the labels and unlabeled data.
 
-3. Suppose you trained a LLM and put it weight on the internet. Somebody just downloaded it and do small modification, saying it's his model. How can you show the plagiarization? (Hint: small modification means adding small Guassian to the weights, or do neuron permutation that don't affect the result. We can assume that he didn't do any training on the model.)
+3. Suppose you trained a LLM and put it weight on the internet. Somebody just downloaded it and do small modification, saying it's his model. How can you show the plagiarization? (Hint: small modification means adding small Gaussian to the weights, or do neuron permutation that don't affect the result. We can assume that he didn't do any training on the model.)
 
 # 3. Back Propagation of Attention (2pts+4pts+3pts=9pts)
 
