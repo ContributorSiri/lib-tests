@@ -61,7 +61,7 @@ The mutual information is defined as
 $$I(X,Z)=\sum_{x,z} p(X=x,Z=z)\frac{\log p(X=x,Z=z)}{\log [p(X=x)p(Z=z)]}$$
 (It's just the definition on the exam paper, but later it will use the mutual information of continuious case.)
 
-1. Consider a VAE, where $p_{data}$ is the data distribution and $z$ is the latent variable. Let $E(z|x)$ be the encoder distribution. Prove: If $x \sim p_{data}$, $z \sim E(z|x)$, then $$I(X,Z)\le \mathbb{E}_{x\sim p_{data}} KL(E(z|x)||R(z))$$, where $R$ denote the standard normal distribution.
+1. Consider a VAE, where $p_{data}$ is the data distribution and $z$ is the latent variable. Let $E(z|x)$ be the encoder distribution. Prove: If $x \sim p_{data}$, $z \sim E(z|x)$, then $I(X,Z)\le \mathbb{E}_{x\sim p_{data}} KL(E(z|x)||R(z))$, where $R$ denote the standard normal distribution.
 
 2. Suppose we are doing Lagrange form on training. Deduce the training objective. (comment: I don't fully understand this question, so it may be wrong)
 
