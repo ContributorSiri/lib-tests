@@ -78,7 +78,7 @@ Consider a diffusion model on discrete space $\{1,2,...,K\}$, at each time step,
 
 1. Calculate $q(x_T|x_0)$
 2. Calculate $q(x_{T-1}|x_T,x_0)$
-3. Design a set of $Q_i$ that makes the input more and more noisy (e.g. $\mathcal{H}(q(x_0))<\mathcal{H}(q(x_1|x_0))<...<\mathcal{H}(q(x_T|x_0))$), and calculate $q(x_T|x_0)$ correspond to your construction.
+3. Design a set of $Q_i$ that makes the input more and more noisy (e.g. $\mathcal{H}(q(x_1|x_0))<...<\mathcal{H}(q(x_T|x_0))$), and calculate $q(x_T|x_0)$ correspond to your construction.
 4. Briefly discuss how this model can be used to train on sentences with small length. You should show the training procedure and the loss function.
 
 # 7."Fill in the middle"(2pts+2pts+2pts+2pts+2pts=10pts)
