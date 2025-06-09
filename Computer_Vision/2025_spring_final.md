@@ -46,7 +46,7 @@ Please choose **all correct choices** for each problem to get $3$ points. **Inco
     (e) Image Pyramid.  
     (f) None of the above.
 
-7. You start training your Neural Network but the loss is almost completely flat. What could be the cause?  
+7. You start training your neural network, but the loss is almost completely flat **from the beginning**. What could be the cause?  
     (a) The learning rate is too low.  
     (b) The weight initialization scale is incorrectly set.  
     (c) The regularization strength is too high.  

@@ -1,4 +1,4 @@
-# Intro to Computer Systems Final 2024 Spring
+# Intro to Computer System: 2024 Spring Final
 ## General Information
 - **Date**: 2024-06-15
 - **Duration**: 19:00 - 21:00
