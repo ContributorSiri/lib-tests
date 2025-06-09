@@ -58,7 +58,7 @@ Let a state-space model defined as $h_t=Ah_{t-1}+Bx_t, y_t=Ch_t$, where $x_t$ ar
 # 5. Mutual Information and VAE/GAN (3pts+1pts+2pts+2pts+2pts=10pts)
 
 The mutual information is defined as
-$$I(X,Z)=\sum_{x,z} p(X=x,Z=z)\frac{\log p(X=x,Z=z)}{\log [p(X=x)p(Z=z)]}$$
+$$I(X,Z)=\sum_{x,z} p(X=x,Z=z)\log \left(\frac{p(X=x,Z=z)}{p(X=x)p(Z=z)}\right)$$
 (It's just the definition on the exam paper, but later it will use the mutual information of continuious case.)
 
 1. Consider a VAE, where $p_{data}$ is the data distribution and $z$ is the latent variable. Let $E(z|x)$ be the encoder distribution. Prove: If $x \sim p_{data}$, $z \sim E(z|x)$, then $I(X,Z)\le \mathbb{E}_{x\sim p_{data}} KL(E(z|x)||R(z))$, where $R$ denote the standard normal distribution.
