@@ -7,7 +7,7 @@
 Please choose **all correct choices** for each problem to get $3$ points. **Incorrect choice** or **no choice** will receive $0$ points; **missing choices** will receive $1$ point. 
 
 1. Which filter(s) is (are) not able to shift the figure (a) to figure (b)?
-    ![](/Images/Computer_Vision/1_1.jpg)
+    *(Note: Figure (b) is obtained by shifting figure (a) to the right)*
     (a) $\begin{pmatrix}0 & 0 & 0\\2 & 0 & 0\\0 & 0 & 0\end{pmatrix}$;     
     (b) $\begin{pmatrix}0 & 0 & 0\\0 & 0 & 2\\0 & 0 & 0\end{pmatrix}$;     
     (c) $\begin{pmatrix}0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0\\1 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0\end{pmatrix}$;     
@@ -79,9 +79,53 @@ For each problem, a correct answer is worth $1$ point, and the explanation is wo
 
 ## 4 Long Answer Problems ($46$ pts)
 
+In this section, the detailed process of calculations, proof, and explanations are required. No points will be awarded if you only write a short answer. Please write the answers in the space provided or attach an extra sheet with a clear structure of your answers. We give partial credit for good explanations of what you are trying to do.
+
 ### 4.1 Convolutional Architectures ($9$ pts)
 
+Consider a convolutional neural network block whose input size is 64 × 64 × 8. The block consists of the following layers:
+
+- A convolutional layer 32 filters with height and width 3, stride 1 and 0 padding, which has both a weight and a bias (i.e. CONV3-32)
+- A 2 x 2 max pooling layer with stride 2 and 0 padding (i.e. POOL-2)
+- A batch normalization layer (i.e. BATCHNORM)
+
+Compute the output volume dimensions and number of parameters of the layers
+
+(You can write the ouptut shapes in the format $(H,W,C)$ where $H,W,C$ are the height, width, and channel dimensions, respectively. You only need to given the formula for counting parameters, no need for the final values.)
+
+(a) What are the output volume dimensions and number of parameters for CONV3-32? ($3$)
+(b) What are the output volume dimensions and number of parameters for POOL-2? ($3$)
+(c) What are the output volume dimensions and number of parameters for BATCHNORM? ($3$)
+
 ### 4.2 Laplacian of Gaussians ($16$ pts)
+
+Hint: subquestions (a), (b), (c) are somewhat independent. You can complete them in any order.
+
+(a) You want to use a convolution with a Laplacian of Gaussian to find edges in an image. *(Note: This image is 2D, left and right are white, middle is black.)*
+
+Suppose that you have the following black and white image. In the image, white is represented by the value 1 and black the value 0. 
+
+Question: Draw a one-dimensional representation of the intensity. Then convolve the image with a Laplacian of Gaussian filter, showing the result of the convolution. ($4$)
+
+Hint: Your sketches do not need to be scaled correctly because we have not specified the width of the Gaussian. Please ignore border effects, i.e., ignore the effect of convolving the kernel with the border of the image. Draw your answer on the following figure (in answer sheet).
+
+(b) Recall the formula of 2D Gaussian and Laplacian of Gaussian:
+$$
+G(x,y)=\frac{1}{2\pi\sigma^2}\exp\left(-\frac{x^2+y^2}{2\sigma^2}\right),$$
+$$
+\text{LoG}(x, y, \sigma) = \nabla^2 G(x, y, \sigma) = \frac{\partial^2 G}{\partial x^2} + \frac{\partial^2 G}{\partial y^2}
+= \frac{1}{\pi\sigma^4} \left( \frac{x^2 + y^2}{2\sigma^2} - 1 \right) e^{-\frac{x^2 + y^2}{2\sigma^2}}.$$
+
+Suppose that you wish to compute the 2D Laplacian of Gaussian of an image. Explain how to accelerate this convolution using separable filters. ($4$)
+
+Hint: consider separable filters
+
+(c) In our lecture, we introduce using Difference of Gaussians $DoG(x,y,\sigma,k)=G(x,y,k\sigma)-G(x,y,\sigma)$ to approximate Laplacian of Gaussian. Now we want to understand why.
+
+Question: You need to first compute the partial derivatives of the 2D Gaussian with repect to $\sigma$, i.e. $\frac{\partial G}{\partial \sigma}$. Then prove the following relationship between Difference of Gaussians and Laplacian of Gaussian:
+$$
+\lim_{k\to 1}\frac{\partial DoG(x,y,\sigma,k)}{k-1} = ? LoG(x,y,\sigma).$$
+Specify what ? is. It should be an expression that only uses $\sigma$ and constants. ($8$)
 
 ### 4.3 Optical Flow ($10$ pts)
 
