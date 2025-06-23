@@ -58,8 +58,12 @@ To maintain a great structure of the repo, we recommend you to check the followi
 3. In some documents, there may be an introduction part. The part primarily states that the contents may not be absolutely accurate, due to the possible failure of remembering the exam questions after taking it. In fact, most of our exam recitations are done manually (i.e. not directly taking pictures of the exam papers, which should have been forbidden according to the regulations).
 4. Before you do the exam problems, please check out the **issues** for possible corrections of the files. Sometimes we may be too busy (or lazy) to modify them.
 
-## Important Updates
+## Updates
 
-The management of this repo is currently given to [Peppaking8](https://github.com/peppaking8) 🎉. Hope that more people in the IIIS can join this wonderful project!
+The management of this repo is currently given to [Bingrun-23](https://github.com/Bingrun-23) 🎉. Hope that more people in the IIIS can join this wonderful project!
 
 `lib-tests` has merged with [liuhanzuo](https://github.com/liuhanzuo)'s repo storing exam cheatsheets 🎉. You can now upload your own **cheatsheet** at here!
+
+## Previous Managers
+
+[ContributorSiri](https://github.com/ContributorSiri) (**repo founder** & 1st manager), [PeppaKing8](https://github.com/PeppaKing8) (2nd manager).
