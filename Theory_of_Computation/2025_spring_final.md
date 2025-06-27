@@ -6,7 +6,7 @@
 
 ## I 
 Consider the following language: 
-$$\text{CYCLE}=\{\langle G,s\rangle\text{|G is a directed simple graph such that vertex s is contained in a directed cycle}$$
+$$\text{CYCLE}=\langle G,s\rangle\text{|G is a directed simple graph such that vertex s is contained in a directed cycle}$$
 Prove that this language is NL-complete.
 ## II
 (1)Prove that $BPP=BPP^{BPP}$
