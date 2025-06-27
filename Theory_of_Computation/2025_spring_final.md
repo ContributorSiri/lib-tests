@@ -36,7 +36,7 @@ Define the language $MAJ$ on $n\in \mathbb{N}$ boolean variables iff there are m
 
 Prove that $MAJ\notin AC_{0}$
 ## VII
-Consider the following problem called APSP problem: Let $G=(V,E,w)$be a weighted directed simple Graph with the set of nodes $V$ and the set of edges $E$, each edge $e\in E$ has a weight $w(e)$assigned.If there are no edge from vertex $i$ to vertex $j$, then the weight of $ij$ is defined to be $+\infty$. We assume there is no directed negative cycle in this graph and the edge weight satisfies $|w(e)|\leq n^{3}$.The goal of the all-pair-shortest-paths problem is to find the shortest path between all pairs of nodes of the graph. 
+Consider the following problem called APSP problem: Let $G=(V,E,w)$ be a weighted directed simple Graph with the set of nodes $V$ and the set of edges $E$, each edge $e\in E$ has a weight $w(e)$ assigned.If there are no edge from vertex $i$ to vertex $j$, then the weight of $ij$ is defined to be $+\infty$. We assume there is no directed negative cycle in this graph and the edge weight satisfies $|w(e)|\leq n^{3}$.The goal of the all-pair-shortest-paths problem is to find the shortest path between all pairs of nodes of the graph. 
 The APSP conjecture states that for any $\delta>0$, there does not exist a algorithm with $O(n^{3-\delta})$ that solves the APSP problem.
 
 (1)Consider the negative triangle problem which decides whether a simple directed weighted graph has a negative triangle. Prove that if this problem has a truly subcubic algorithm then the APSP conjecture is incorrect.
