@@ -20,7 +20,7 @@ Prove that this language is NL-complete.
 Consider the random algorithm of deciding whether a number is prime we have introduced on class.
 
 Define the  Carmichael number to be a odd composites $n$ which satisfies
- $$ \forall a \in \mathbb{Z}_{n}^{+}, (a,n)=1, a^{n-1}\equiv 1(\text{mod } n) $$. 
+$$\forall a \in \mathbb{Z}_{n}^{+}, (a,n)=1, a^{n-1}\equiv 1(\text{mod } n) $$. 
 
 Prove that for a odd composite which is not a Carmichael number, the random algorithm has probability greater or equal to $\frac{1}{2}$ to succeed.
 ## IV
