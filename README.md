@@ -19,6 +19,8 @@ A library for saving midterm and final exams of IIIS (Institute for Interdiscipl
 
 🎉 [Lyy-iiis](https://github.com/Lyy-iiis) has uploaded all his cheatsheets for the courses he took in IIIS. You can find them in the corresponding course folders. If you hope for editable versions, please contact him directly via email or WeChat.
 
+🌟 Please give us a star on GitHub if you find this project helpful!
+
 ## Advertisement on the Fall Semester 📢
 
 We are urgently calling for the **MIDTERM and FINAL of 2025-2026 Fall Semester** for all the courses:
