@@ -12,18 +12,23 @@ A library for saving midterm and final exams of IIIS (Institute for Interdiscipl
 > 
 > If you still don't know what it is about-well, we don't understand as well! :)
 
-## Advertisement on the Spring Semester
+## Updates
 
-We are urgently calling for the **FINAL of 2025 Spring Semester** of the following courses:
+The management of this repo is currently given to [Bingrun-23](https://github.com/Bingrun-23) 🎉. Hope that more people in the IIIS can join this wonderful project!
 
-- Introduction to Computer Systems (计算机系统概论) (All problems)
-- Applied Mathematics for Computer Science and Artificial Intelligence (计算机与人工智能应用数学) (All problems)
+[Lyy-iiis](https://github.com/Lyy-iiis) have uploaded all his cheatsheets for the courses he took in IIIS 🎉. You can find them in the corresponding course folders. If you hope editable versions, please contact him directly via email or Wechat.
+
+## Advertisement on the Fall Semester
+
+We are urgently calling for the **MIDTERM and FINAL of 2025-2026 Fall Semester** all the following courses
+<!-- - Introduction to Computer Systems (计算机系统概论) (All problems) -->
+<!-- - Applied Mathematics for Computer Science and Artificial Intelligence (计算机与人工智能应用数学) (All problems) -->
 
 Also, we are calling for the **ANSWERS** (both official or unofficial) of the previous uploaded exams. 
 
 For the contribution standard, please refer to [How to Contribute](#how-to-contribute).
 
-Thanks for your attention! After you contribute by _pull request_, please contact to [@PeppaKing8](https://github.com/PeppaKing8) for a meal :)
+Thanks for your attention! After you contribute by _pull request_, please contact to [@Lyy-iiis](https://github.com/Lyy-iiis) for a meal :)
 
 ## Disclaimer
 
@@ -57,12 +62,6 @@ To maintain a great structure of the repo, we recommend you to check the followi
 2. Most of the exam papers are written in Markdown or $\LaTeX$. For $\LaTeX$ files, please use [overleaf](https://www.overleaf.com) or your local compiler. For markdown files, since the well known terribleness of Github markdown preview, please download the files for the best experience.
 3. In some documents, there may be an introduction part. The part primarily states that the contents may not be absolutely accurate, due to the possible failure of remembering the exam questions after taking it. In fact, most of our exam recitations are done manually (i.e. not directly taking pictures of the exam papers, which should have been forbidden according to the regulations).
 4. Before you do the exam problems, please check out the **issues** for possible corrections of the files. Sometimes we may be too busy (or lazy) to modify them.
-
-## Updates
-
-The management of this repo is currently given to [Bingrun-23](https://github.com/Bingrun-23) 🎉. Hope that more people in the IIIS can join this wonderful project!
-
-`lib-tests` has merged with [liuhanzuo](https://github.com/liuhanzuo)'s repo storing exam cheatsheets 🎉. You can now upload your own **cheatsheet** at here!
 
 ## Previous Managers
 
