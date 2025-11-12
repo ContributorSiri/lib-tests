@@ -66,7 +66,7 @@ Find:
 **(4)** Calculate the electrostatic energy stored in the entire system.
 
 ## Problem 7 (15 pts)
-**(1)** Consider two infinitely long lines with uniform linear charge distributions, located at $y = d$ and $y = -d$, carrying charge densities $\lambda$ and $-\lambda$ per unit length, respectively. Prove that the equipotential surfaces in space are cylindrical surfaces.
+**(1)** Consider two infinitely long lines with uniform linear charge distributions, located at $x = d$ and $x = -d$, carrying charge densities $\lambda$ and $-\lambda$ per unit length, respectively. Prove that the equipotential surfaces in space are cylindrical surfaces.
 
 **(2)** Consider a cylindrical conducting shell of radius $R$, whose axis coincides with the $y$-axis, and whose total charge is zero. A line of uniform charge density $\lambda$ is parallel to the axis of the cylinder, located at a distance $l$ from the axis ($l>R$), and lies in the $xOy$-plane. Find the surface charge density $\sigma(\theta)$ at a point on the conducting shell that makes an angle $\theta$ with the $xOy$-plane.
 
