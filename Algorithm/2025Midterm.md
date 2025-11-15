@@ -16,7 +16,7 @@ where **log\* n** denotes the number of times the logarithm function must be app
 (2)(2pts) Give a counterexample showing that Dijkstra's algorithm cannot correctly compute the shortest paths in a graph that has negative edge weights but no negative-weight cycles.
 
 ##  Problem 3 (3 pts) 
-Consider the Supplier Problem: Given a graph $G=(V,E)$, with a weight on each edge and the weight satisfies the triangular inequality (which makes the weight a metric space). where $V$ is partitioned into two parts $C$(Customers) and $S$(Suppliers). The goal is to find $k$(fixed) points in $S$, called $s_1,\dots,s_k$ ,to minimize $T=\max_{c\in C} \min_{1\le i \le k} dis(s_i,c)$.
+Consider the Supplier Problem: Given a graph $G=(V,E)$, with a weight on each edge and the weight satisfies the triangular inequality (which makes the weight a metric space). where $V$ is partitioned into two parts $C$(Customers) and $S$(Suppliers). The goal is to find $k$(fixed) points in $S$, called $s_1,\dots,s_k$ ,to minimize $T=\max_{c\in C} \min_{1\le i \le k} \text{dist}(s_i,c)$.
 Show that it is NP-Complete to give a $(3-\epsilon)$-approximation algorithm.
 
 ##  Problem 4 (3 pts)
@@ -28,14 +28,14 @@ There are 10 sorted arrays and their length are all $n$, give a algorithm that r
 ##  Problem 6 (4 pts)
 Consider a complete binary tree \(T\) with \(n\) leaves.  
 We define a tree metric on these \(n\) leaves as follows:  
-For every node \(v\) in \(T\), associate a value \(L(v) \ge 0\).  
+For every node \(v\) in \(T\), associate a value \(L(v) \ge 0\). And if the node $v$ is not a leaf node, then \(L(v)>0\)
 Furthermore, whenever node \(u\) is the parent of node \(v\), we require \(L(v) \ge L(u)\).
 
 For any two leaves \(x, y\), define the tree metric: $d_T(x, y) = L(\mathrm{LCA}(x, y))$,where \(\mathrm{LCA}(x,y)\) denotes the lowest common ancestor of \(x\) and \(y\).
 
 (1)(1pts) Prove that \(d_T\) is indeed a metric.
 
-(2)(3pts) A tree metric \(d_T\) is called good if for all \(x, y\),
+(2)(3pts) A tree metric \(d_T\) is called **consistent** if for all \(x, y\),
 
    \[
    d_T(x, y) \le d(x, y).

@@ -44,7 +44,7 @@ There are n empty bins. An **operation** means randomly put a ball to a bin, and
 
 9.(4pts)
 
-Consider the Supplier Problem: Given a graph $G=(V,E)$, with a weight on each edge. where $V$ is partitioned into two parts $C$(Customers) and $S$(Suppliers). The goal is to find $k$(fixed) points in $S$, called $s_1,\dots,s_k$ ,to minimize $T=\max_{c\in C} \min_{1\le i \le k} dis(s_i,c)$.
+Consider the Supplier Problem: Given a graph $G=(V,E)$, with a weight on each edge. where $V$ is partitioned into two parts $C$(Customers) and $S$(Suppliers). The goal is to find $k$(fixed) points in $S$, called $s_1,\dots,s_k$ ,to minimize $T=\max_{c\in C} \min_{1\le i \le k} \text{dist}(s_i,c)$.
 
 (1) Give a poly-time 3-approximation algorithm to calculate $T_{min}$.
 
