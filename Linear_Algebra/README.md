@@ -1,7 +1,8 @@
 # Linear Algebra (线性代数)
 
 - **Instructor**: Yong Xu (徐勇, 2023 & 2024)
-- This course is for freshmen in spring semester.
+- **Textbook**: _Linear algebra_, Stephen H. Friedberg, Arnold J. Insel, Lawrence E. Spence
+- This course is for freshmen in fall semester.
 
 ### Notes
 
