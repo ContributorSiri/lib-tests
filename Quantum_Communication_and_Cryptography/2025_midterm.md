@@ -160,7 +160,7 @@ $$
 
 Alice and Bob wish to perform the entanglement swapping protocol. They both possess a Bell pair, $\ket{\Phi^+}_{A_1 A_2}$ and $\ket{\Phi^+}_{B_1 B_2}$, respectively. They send one of their qubits, $A_1$ and $B_1$, to Charlie, who performs a Bell State Measurement on the two qubits and sends the measurement result to Alice. Depending on the measurement result, Alice performs a local unitary operation on her qubit $A_2$, to recover a Bell pair, $\ket{\Phi^+}_{A_2 B_2}$, between $A_2$ and $B_2$.
 
-Now suppose that some known local unitary errors $U$ and $V$ occur on the qubits $A_1$ and $B_1$, respectively, before they reach Charlie. The full procedure with errors is illustrated in 
+Now suppose that some known local unitary errors $U$ and $V$ occur on the qubits $A_1$ and $B_1$, respectively, before they reach Charlie. The full procedure with errors is illustrated in Figure 9.1.
 ![](../Images/Quantum_Communication_and_Cryptography/2025midterm/figure_9.1.jpeg)
 *Figure 9.1: Entanglement swapping with local errors. "BSM" stands for Bell State Measurement.*
 
@@ -169,7 +169,7 @@ Now suppose that some known local unitary errors $U$ and $V$ occur on the qubits
 (b) (5 points) Suppose instead of perfect Bell pairs, the Bell pairs Alice and Bob possess is noisy and may be described by the density matrix
 
 $$
-\rho_{A_1 A_2} = (1-p) \ket{\Phi^+} \bra{\Phi^+} + p \frac{I}{4},
+\rho_{A_1 A_2} = \rho_{B_1 B_2} = (1-p) \ket{\Phi^+} \bra{\Phi^+} + p \frac{I}{4},
 $$
 
 where $0 < p < 1$. In this case, to maximize the fidelity between the final state of $A_2 B_2$ and the ideal Bell pair $\ket{\Phi^+}_{A_2 B_2}$, what operations should Alice perform on $A_2$, for each measurement outcome of Charlie? What is the corresponding maximal fidelity?
