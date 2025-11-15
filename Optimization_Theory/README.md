@@ -1,0 +1,3 @@
+# Optimization Theory (优化理论)
+ **Instructor**: Jingzhao Zhang (张景昭, 2025)
+ - This course is for the sophomores in fall semester.<br/>- **Textbook**: *Introduction to Linear Optimization*, Dimitris Bertsimas , John N. Tsitsiklis *Convex Optimization*, Lieven Vandenberghe and Stephen P. Boyd *Convex Optimization: Algorithms and Complexity*, Sébastien Bubeck<br/>- **Course Logistics** (2025): 50% Homework + 25% Midterm + 25% Final<br/>- **Course Description**: This course talks about optimization theory. It mainly focus on theory analysis, and also includes discussions on experiments. The course includes 60% fundamental contents and 40% modern applications (gradient methods, deep learning, RL, etc). There is no coding assignment.
