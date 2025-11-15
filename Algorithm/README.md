@@ -12,10 +12,16 @@
     - The ones who have OI certificate (NOIP-1 or other equivalent prize) can skip some HW problems.
 - **Course Logistics** (2024):
 
-    - HW: 25%
+    - HW: 25% (only need to solve three problems in each problem set)
     - Survey: 25%
     - Midterm: 0% (only serving as a mock test for final)
     - Final: 50%
+- **Course Logistics** (2025):
+
+    - HW: 25% (must solve all the problems in each problem set), bonus less than 5%, research problem less than 10%
+    - Midterm: 25% 
+    - Final: 50%
+    - As a comparison to last year, there is no survey
 
 > A lesson from the seniors:
 > 
