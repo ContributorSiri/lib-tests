@@ -1,4 +1,4 @@
 # Quantum Communication and Cryptography (量子通讯与密码)
  **Instructor**: XiongFeng Ma (马雄峰, 2025)
- - This course is for the sophomores in fall semester.<br/>- **Textbook**: *Quantum communication and Quantum computation*, Nielson & Chuang 
+ - This course is for the Junior in fall semester.<br/>- **Textbook**: *Quantum communication and Quantum computation*, Nielson & Chuang 
   (the current manager of this repository recommends a lecture note, *From Classical to Quantum Shannon Theory* by Mark M.Wilde)<br/>- **Course Logistics** (2025): 20% Homework + 30%-40% Midterm + 40%-50% Final<br/>- **Course Description**: This course primarily introduces the forefront of quantum communication and quantum cryptography research, including: quantum fundamentals; quantum entanglement theory; quantum communication and quantum teleportation; quantum cryptography; and related physical implementations. It will discuss various related areas, including quantum key distribution, quantum networks, quantum attacks, quantum random number generators, quantum teleportation, multiphoton entanglement, and experimental implementations based on quantum optics. 
