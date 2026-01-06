@@ -1,0 +1,108 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{fullpage}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{amsmath, amssymb}
+\usepackage{mathrsfs}
+\usepackage[shortlabels]{enumitem}
+\usepackage{wrapfig}
+\usepackage{natbib, url}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{tabularx}
+\usepackage{braket}
+
+\title{25-26 Fall Quantum Communication and Cryptography Finals}
+
+\begin{document}
+
+\date{}
+\maketitle
+\vspace*{-0.8cm}
+
+\section*{Introduction}
+The exam lasts for 165 minutes and is required to be answered in English. The overall score is ? points.
+
+\section*{1. Applications(14 pts)}
+Deduce if the following proposals can have \textbf{information theoretically} ideal protocols. "Classical" means that no quantum resource ( states, measurements, etc. ) can be used; "Quantum" can utilize any possible resource. Fill in T/F.
+
+\begin{table}[htbp]
+\centering
+\caption{Applications}
+\begin{tabular}{|c|c|c|}
+\hline
+Applications & Classical & Quantum \\
+\hline
+Error Correction &  &  \\
+\hline
+Key Distribution &  &  \\
+\hline
+Bit Commitment &  &  \\
+\hline
+Ideal Coin Flipping &  &  \\
+\hline
+Data Locking &  &  \\
+\hline
+Secret Sharing &  &  \\
+\hline
+Digital Signature &  &  \\
+\hline
+\end{tabular}
+\label{table1}
+\end{table}
+ 
+\section*{2. Linear Secret Sharing(5 pts)}
+Consider the following secret sharing protocal: Applying a linear quantum channel $\mathscr{E}$ and distributing the bipartite state between Alice and Bob. $$\mathscr{E}(a\ket{0}_{AB}+b\ket{1}_{AB}) = a\ket{0'}_{AB}+b\ket{1'}_{AB}$$
+Prove that by this scheme, ideal secret sharing is impossible. 
+
+\section*{3. Quantum State Set for Digital Signature(5 pts)}
+Given a map from key bit string to target bit string $F\ :\ \{0,1\}^n \rightarrow \{0,1\}^m$, $m>n$ and for any key string $k\neq k'$, the respective corresponding target string has at least $d \geq 0.1m$ differences.\\
+Explicitly construct a protocal that maps key strings $k$ to quantum states $\ket{\psi_k}$ in Hilbert space of $\log_2(m)+1$ qubits, satisfying: if $k\neq k'$, the respective corresponding states $|\langle\psi_k|\psi_{k'}\rangle|\leq0.9$.
+
+\section*{4. Pure State GME Criterion(3 + 4 pts)}
+(i) Show that if a tripartite pure state $\ket{\psi_{ABC}}$, if it is not a genuine multipartite entangled state, then by losing a particle, at least two of the states $\rho_{AB}$, $\rho_{AC}$, $\rho_{BC}$ are separable states.\\
+(ii) Show that $\ket{W}=\frac{1}{\sqrt{3}}(\ket{100}+\ket{010}+\ket{001})$ is a genuine multipartite entangled state.
+
+\section*{5. Entanglement Measures(? pts)}
+Consider the following entanglement measures:
+$$E_D(\rho)=\sup\ \left\{r\ :\ \underset{n \to \infty}{\lim} \left[ \underset{\Lambda \in LOCC}{\inf}||\Lambda(\rho^{\otimes n})-\Phi(2^{rn})||_1\right] \ =\ 0\ \right\}$$
+$$E_C(\rho)=\inf\ \left\{r\ :\ \underset{n \to \infty}{\lim} \left[ \underset{\Lambda \in LOCC}{\inf}||\rho^{\otimes n}-\Lambda(\Phi(2^{rn}))||_1\right] \ =\ 0\ \right\}$$
+where $\Phi(d)$ represents the density operator of the d-dimensional maximally entangled state.\\
+(i) State the operational meanings of the two measures.\\
+(ii) For a given bipartite quantum state $\rho$, compare the values of $E_D(\rho)$ and $E_C(\rho)$ and briefly state the reason.
+
+\section*{6. Basic BB84 QKD(? pts)}
+(i) Explain in one or two sentences why the BB84 key is secure when error correction achieves $e_b=e_p=0$.\\
+(ii) Suppose Alice and Bob both choose $Z$ basis with probability $p$, and $X$ basis with probability $1-p$, calculate the key sifting rate as a function of $p$.\\
+(iii) Now Eve does a intercept-resend attack. Eve measures in $Z$ basis with probability $q$, and $X$ basis with probability $1-q$. Compute the error rate $e_b$, $e_p$ Alice and Bob can obtain by sampling.
+
+\section*{7. Biased Coin Flipping(2 + 4 + 10 + 2 pts)}
+Consider the following key flipping protocal:\\
+1. Alice first think of a bit $a$(0 or 1), then she prepares the corresponding two-qutrit state $\ket{\psi_a}=\sqrt{\alpha}\ket{aa}_{AB}+\sqrt{1-\alpha}\ket{22}_{AB}\ \ (0<\alpha<1)$, and then send part B to Bob. $\ket{\psi_0}$ and $\ket{\psi_1}$ are known by both the two parties.\\
+2. Bob randomly generates a bit $b$(0 or 1) and send it to Alice.\\
+3. Alice sends the A part of her prepared state to Bob and tell Bob what $a$ is. Bob now does his best projective measurement to determine whether the state is $\ket{\psi_0}$ or $\ket{\psi_1}$. If he finds Alice cheating, his aborts.\\
+4. The result of the "coin flipping" is $r=a\oplus b$.\\
+(i) Explain why the protocal achieves fair coin flipping if both Alice and Bob are honest.\\
+(ii) Consider how Bob may cheat: He could try to distinguish between $\ket{\psi_0}$ and $\ket{\psi_1}$ when he only has the B part of Alice's state. Calculate his maximal cheating probability $P_B(\alpha)$.\\
+(iii) Consider how Alice may cheat: Suppose she wants $r$ to be 0. She could prepare states other than $\ket{\psi_a}$ in Step 1, and whatever $b$ is, she always declare $a = b$. Before she sends part A to Bob, she could apply any local unitary operator on part A. Calculate her maximal cheating probability $P_A(\alpha)$.\\
+(iv) Calculate minimum of $\underset{\alpha}{max}\{P_A(\alpha), P_B(\alpha)\}-\frac{1}{2}$.
+
+\section*{8. No-go for Pure Resource Reconstruction(? pts)}
+(i) Prove that for a full rank density matrix $\rho$, given any density matrix $\sigma$, there exists $\mu\ (0<\mu<1)$ and density matrix $\tau$ that satisfies: $\rho=\mu\sigma+(1-\mu)\tau$.\\
+(ii) Prove that for a full rank density matrix $\rho$, it is impossible to obtain a resourceful pure state $\ket{\psi}\langle\psi|$ by applying only free operations. 
+
+\section*{9. Optimal Entanglement Witness(? pts)}
+(i) Prove that if an entanglement witness can be written as the following decomposition: $W_{AB}=P+Q^{T_A}$, then it cannot detect PPT entangled states.\\
+(ii) Prove that if an entanglement witness is optimal, then $tr(\rho W)=0$ for some separable state(s) $\rho$. \\
+(iii) Prove that for an entanglement witness, if there exists a full rank state $\rho$ that satisfies $tr(\rho W)=0$, then the entanglement witness is optimal.
+
+\section*{10. Basis dependent physical error and correction(? pts)}
+In a real-life BB84 QKD device using photons as the carrier of information, there are flaws in the theoretically secure protocal. Suppose that Eve can control the efficiency of the photon detectors. When Bob chooses to measure in $Z$ basis, the detector efficiency is $\eta_Z$; when measuring in $X$ basis, the detector efficiency is $\eta_X$. Within the limit of a given number $r\geq1$, Eve may control the efficiency as long as it satisfies $\frac{1}{r} \leq \frac{\eta_X}{\eta_Z} \leq r$.\\
+(i) When $r$ can be arbitrarily large, show that Eve can know everything about the generated key. Explicitly state the attack method Eve uses.\\
+(ii) Now $r$ is a finite number, but Eve still uses the method in the last question. Calculate the bit and phase error $e_b$, $e_p$ and upper bound them.\\
+(iii) Calculate the asymptotic key generation rate and provide a security proof.
+
+\end{document}
