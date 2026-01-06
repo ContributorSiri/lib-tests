@@ -61,7 +61,8 @@
 
 7. Consider a square waveguide made of an ideal conductor with side length $L$. The axis is along the $z$ direction. We focus on the modes where 
 
-   $$E_x = E_0 \sin\left(\frac{m\pi y}{L}\right) \sin(kz - \omega t),$$ 
+   $$ E_x = E_0 \sin\left(\frac{m\pi y}{L}\right) \sin(kz - \omega t)$$
+   
 
    with $E_y = E_z = 0$, and $B$ is perpendicular to $E$, implying $B_z = 0$.
 
