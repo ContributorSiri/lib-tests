@@ -6,3 +6,4 @@
 - **Cheatsheets**:
   - [cs_2024_lhz](cheatsheet/cs_2024_lhz.pdf) by [liuhanzuo](https://github.com/liuhanzuo).
   - [cs_2025_yk](cheatsheet/cs_2025_yk.pdf) by [myeeye](https://github.com/myeeye). This term only allows for two papers in final, you may print 4 pages onto one surface!
+  - [cs_2025_qkx](cheatsheet/cs_2025_qkx.pdf) by [SlinkierApple13](https://github.com/SlinkierApple13).
