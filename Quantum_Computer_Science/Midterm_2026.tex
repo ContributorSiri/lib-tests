@@ -1,0 +1,125 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{graphicx,float,wrapfig}
+\usepackage{braket}
+
+\topmargin=-0.45in      %
+\evensidemargin=0in     %
+\oddsidemargin=0in      %
+\textwidth=6.5in        %
+\textheight=9.0in       %
+\headsep=0.25in         %
+
+\linespread{1.1}
+
+\title{\textbf{QCS 2026 Midterm}}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Intro}
+The exam is on 2026.4.16 from 10:00 to 12:20. The overall score is 100. You may bring an A4 cheat sheet (double-sided).
+
+\section{Coherent States (in Quantum Optics)}
+The Fock states $\{\ket n\}_{n\geq 0}$ form a basis for a single-mode photon system. Consider creation and annihilation operators:
+\[a\ket n=\sqrt{n}\ket{n-1};\ a^\dagger\ket n=\sqrt{n+1}\ket{n+1}.\]
+The coherent state $\ket\alpha$ is an eigenstate of annihilator $a$, satisfying
+\[a\ket\alpha=\alpha\ket{\alpha},\]
+where $\alpha$ is a complex number.\\
+(1) Express $\ket\alpha$ as a linear combination of the Fock states $\{\ket n\}_{n\geq 0}$. You should explicitly write out the complex coefficients. \\
+(2) Prove that for $\alpha\neq \beta$, two coherent states are not orthogonal. That is, calculate $\bra\alpha\beta\rangle$, and prove that it is not zero for general $\alpha,\beta$. \\
+(3) Consider the time evolution of a coherent state. The state is initially $\ket\alpha$ and is subject to a Hamiltonian
+\[H=\hbar\omega a^\dagger a, \]
+prove that the state remains a coherent state $\ket{\gamma(t)}$, and calculate $\gamma(t)$. \\
+(4) We now consider the Squeeze operator
+\[D(\alpha)=e^{\alpha a^\dagger-\alpha^*a}.\]
+(4.1) Prove that $\ket\alpha=D(\alpha)\ket 0.$\\
+Hint: The BCH Formula: If operators $A,B$ satisfy $[A,[A,B]]=[B,[A,B]]=0$, then
+\[e^{A+B}=e^Ae^Be^{-\frac{1}{2}[A,B]}=e^Be^Ae^{\frac{1}{2}[A,B]}.\]
+(4.2) Simplify the following expressions: $D^\dagger(\alpha)aD(\alpha);\ D^\dagger(\alpha)a^\dagger D(\alpha).$ Your result should only contain $a,a^\dagger, \alpha,\alpha^*.$\\
+Hint: If operators $A,B$ satisfy $[A,[A,B]]=0$, then
+\[e^ABe^{-A}=B+[A,B].\]
+
+\section{Multipartite system and Schmidt Decomposition}
+(Note: The concrete states may be different from those in the original exam due to damping effects in my memory, but I can guarantee that they differ by only local unitaries and thus do not affect the results)\\
+Consider two states:\\
+(a) \[\ket{\psi}_{AB}=\sqrt{\frac{3}{8}}(\ket{00}+\ket{11})+\sqrt\frac{1}{8}(\ket{01}+\ket{10}).\]
+\[\rho_A=\frac{I}{2}+\frac{\sqrt3}{4}\sigma_x.\]
+(b) \[\ket{\psi_{A_1A_2B}}=\frac{\sqrt7}{4}(\ket{100}+\ket{011})+\frac{1}{4}(\ket{101}-\ket{010}),\]
+\[\rho_{A_1A_2}=\frac{3}{16}I_{A_1}\otimes I_{A_2}+\frac{1}{8}(\ket{00}+\ket{11})(\bra{00}+\bra{11}).\]
+\\ \\
+(1) Explicitly calculate the density matrix of system $A$ for (a) and system $A_1A_2$ for (b) by taking partial trace. State whether the density matrices given are the correct matrices.\\
+(2) With the density matrices given in (a)(b), make a purification $\ket\phi$ onto the whole system. ($AB$ for (a) and $A_1A_2B$ for (b)). Do the pure states you give differ from the pure states given by only local unitaries, that is, $(U_A\otimes U_B)\ket\phi=\ket\psi$? If true, explicitly state the unitary; if not, prove why.\\
+(3) Now we turn to a tri-partite pure state, can it be generally expressed in a Schmidt decomposition form?
+\[\ket\Psi_{ABC}=\sum_{i}\sqrt{p_i}\ket{\psi_i^A}\otimes\ket{\psi_i^B}\otimes\ket{\psi_i^C}.\]
+where the $\ket{\psi_i}$ for each system form an orthonormal vector set in its Hilbert space. Whatever your answer is, give a proof.
+
+\section{General Operations}
+(1) Express a general state density matrix \[\begin{pmatrix} a & b^*\\b & 1-a \end{pmatrix}\] as a linear expansion of $I,\sigma_x,\sigma_y,\sigma_z.$\\
+(2) Notice that in the above expression, some of the terms have trace 0. We want to express the density matrix in (1) as a linear combination of the following four normalized density matrices:
+\[\ket{\psi_1}\bra{\psi_1}=\ket{0}\bra{0},\]
+\[\ket{\psi_2}\bra{\psi_2}=\ket{1}\bra{1},\]
+\[\ket{\psi_3}\bra{\psi_3}=\frac{1}{2}(\ket{0}+\ket{1})(\bra{0}+\bra{1}),\]
+\[\ket{\psi_4}\bra{\psi_4}=\frac{1}{2}(\ket{0}+i\ket{1})(\bra{0}-i\bra{1}).\]
+(3) We have prepared the four states above and let them pass through a general operation $\mathcal E$. Then we perform state tomography, that is, we prepare a large number of such states and each time measure $\sigma_x,\sigma_y, \sigma_z$ so that the averaged results are very close to the expectation predicted by quantum mechanics. The averaged results are presented in the following table.
+\begin{align*}
+\begin{tabular}{c||cccc}
+        & $\mathcal{E}(\ket{\psi_1}\bra{\psi_1})$ & $\mathcal{E}(\ket{\psi_2}\bra{\psi_2})$ & $\mathcal{E}(\ket{\psi_3}\bra{\psi_3})$ & $\mathcal{E}(\ket{\psi_4}\bra{\psi_4})$ \\ \hline\hline
+$\sigma_x$   & 0     & 0     & 1/4     & 0     \\
+$\sigma_y$   & 0     & 0     & 0     & 1/4     \\
+$\sigma_z$   & 1     & -1/4     & 3/8     & 3/8
+\end{tabular}
+\end{align*}
+Define the (unnormalized) density matrices
+\[\rho_0=\ket0\bra0,\rho_1=\ket0\bra1,\rho_2=\ket1\bra0,\rho_3=\ket1\bra1.\]
+Express $\mathcal{E}(\ket{\psi_i}\bra{\psi_i}),i\in\{1,2,3,4\}$ as linear combinations of $\{\rho_j\},j\in\{0,1,2,3\}$, then express $\mathcal{E}(\rho_i),i\in\{0,1,2,3\}$ as linear combinations of $\{\rho_j\},j\in\{0,1,2,3\}$.\\
+(4) Find out the Kraus operator-sum representation of the general operation.\\
+Hint: We first define
+\[E_0=I,E_1=Z,E_2=-iY,E_3=Z.\]
+We see that they form a basis of the operator space on a single qubit, and therefore the actual Kraus operators can be expressed as
+\[F_i=\sum_me_{im}E_m,\]
+which gives
+\[\mathcal E(\rho)=\sum_{mn}E_m\rho E_n^\dagger\chi_{mn},\]
+where
+\[\chi_{mn}=\sum_ie_{im}e_{in}^*.\]
+In the previous problem, you have already determined
+\[\mathcal E(\rho_j)=\sum_k\lambda_{jk}\rho_k.\]
+Given the definition of $E_i$, you may also find out
+\[E_m\rho_jE_n^\dagger=\sum_{k}\beta^{mn}_{jk}\rho_k.\]
+From the linear independence of $\rho_k$, we have
+\[\sum_{mn}\beta^{mn}_{jk}\chi_{mn}=\lambda_{jk}.\]
+Solve this linear equation to determine $\chi_{mn}$, and do a diagonalization
+\[\chi=UDU^{\dagger},\]
+where $D$ is a real diagonal matrix and $U$ is a unitary.
+Finally, we can obtain
+\[E_i=\sqrt{d_i}\sum_{j}U_{ji}E_{j}.\]
+Note (Not in original testpaper): For a more complete version the method in the hint, formally known as quantum process tomography, refer to Quantum Computation and Quantum Information (Nielson and Chuang) Section 8.4.2.
+
+\section{Fermi's Golden Rule}
+(1) Consider a system with multiple energy levels, corresponding to eigenstates $\{\ket{n}\}_{n\geq0}$, satisfying $H_0\ket n=E_n\ket n.$ We now introduce a small perturbation, after which the Hamiltonian is
+\[H=H_0+\sum_{a,b}V_{ab}\ket a\bra b.\]
+Let us suppose the state is originally at a particular energy level $\ket i$. The time evolution of the system is described by 
+\[\ket \psi=\sum_nc_n(t)e^{-iE_nt/\hbar}\ket n.\] To the lowest order of $V$, solve for $c_n(t)$ for all $n\neq i$.\\
+(2) Calculate the transition probability $\Pr[i\rightarrow n](t)=|c_n(t)|^2.$\\
+(3) However, for a real physical system, transition happens for a continuous spectrum, that is,
+\[P_n(t)=\int\rho(E_n)\Pr[i\rightarrow n](t)dE_n,\]
+where $\rho(E_n)$ is a probability density distribution. Calculate $P_n(t)$. Verify that it is proportional to the elapsed time and write down the transition rate $R_n:=\frac{dP_n(t)}{dt}$.\\
+Hint: $\Pr[i\rightarrow n](t)$ is a very sharp function around some particular energy, so we may take the variables $V_{ab}$ and $\rho(E_n)$ inside the integral to be their value at that particular frequency (i.e. a constant) and use the formula
+\[\int_{-\infty}^{+\infty}\frac{\sin^2(x)}{x^2}dx=\pi.\]
+
+\section{Spin Oscillation}
+Consider a qubit system evolving under the following Hamiltonian:
+\[H=\frac{1}{2}\hbar\omega_0\sigma_z+\hbar\Delta(\sigma_+e^{-i\omega t}+\sigma_-e^{i\omega t}).\]
+Denote $\omega-\omega_0=\delta.$ $\sigma_+=\ket0\bra1,\sigma_-=\ket1\bra0,\sigma_z=\ket0\bra0-\ket1\bra1,\sigma_x=\ket1\bra0+\ket0\bra1.$ In order to solve this system, we perform a picture transform such that the Hamiltonian under the new picture is
+\[H'=e^{\frac{1}{2}i\omega t\sigma_z}(H-\frac{1}{2}\hbar\omega\sigma_z)e^{-\frac{1}{2}i\omega t\sigma_z}.\]
+(1) Simplify the expression of the new Hamiltonian as a linear combination of Pauli operators.\\
+Hint:
+\[e^{\frac{1}{2}i\omega t\sigma_z}\sigma_+e^{-\frac{1}{2}i\omega t\sigma_z}=\sigma_+e^{i\omega t}.\]
+\[e^{\frac{1}{2}i\omega t\sigma_z}\sigma_-e^{-\frac{1}{2}i\omega t\sigma_z}=\sigma_-e^{-i\omega t}.\]
+(2) Under the condition that $\Delta\ll \delta$(far less than), compute the eigenvalues (the energy spectrum) of the system, and expand it to the second order of $\Delta/\delta$. Calculate the shift of the energies caused by $\Delta$, that is, the difference between $\Delta=0$ and your previous result.\\
+(3) Now $\delta=0$. Suppose the system is originally on the state $\ket0$, solve for the state vector $\ket{\psi(t)}=a(t)\ket0+b(t)\ket1$, and find out the minimum time for a complete bit flip ($b(t)=1$) to occur.
+
+
+\end{document}
