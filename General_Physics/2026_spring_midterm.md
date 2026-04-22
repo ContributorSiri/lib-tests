@@ -43,11 +43,11 @@ A chain of length $L$ and linear density $\lambda$ is initially placed at the ed
 
 ## Problem 7 ($10$ pts)
 
-A spaceship is initially orbitting the Sun in the Earth's orbit $r_E$. Now it needs to transfer to the orbit of Mars $r_M$. The transfer is achieved by two instantaneous thrusts at $r_E$ and $r_M$. Find the total velocity change in the process $|\Delta v_1|+|\Delta v_2|$. Denote $\mu=GM_{\mathrm{sun}}$.
+A spaceship is initially orbiting the Sun in the Earth's orbit $r_E$. Now it needs to transfer to the orbit of Mars $r_M$. The transfer is achieved by two instantaneous thrusts at $r_E$ and $r_M$. Find the total velocity change in the process $|\Delta v_1|+|\Delta v_2|$. Denote $\mu=GM_{\mathrm{sun}}$.
 
 ## Problem 8 ($10$ pts)
 
-A solid sphere with radius $R$ and mass $M$ initially roates with angular velocity $\omega$. An insect with mass $m$ starts from the north pole and crawls to the south pole along the meridian with constant velocity $v$ (relative to the surface of the sphere). The system does not expereince any force other than those on the axis. Find how much the rotating angle of the sphere is delayed due to the insect.
+A solid sphere with radius $R$ and mass $M$ initially rotates with angular velocity $\omega$. An insect with mass $m$ starts from the north pole and crawls to the south pole along the meridian with constant velocity $v$ (relative to the surface of the sphere). The system does not experience any force other than those on the axis. Find how much the rotating angle of the sphere is delayed due to the insect.
 ![](../Images/General_Physics/2026_spring_midterm/p8.png)
 
 ## Problem 9 ($10$ pts)
@@ -56,5 +56,5 @@ A prey $A$ is escaping a predator $B$. Initially $A$ is at point $(0,0)$ and $B$
 
 ## Problem 10 ($10$ pts)
 
-A platform is rotating with constant angular velocity $\omega$. A ball with mass $m$, radius $a$ and moment of intertia $I$ moves on the platform without slipping. Prove that no matter what the initial conditions are, the center of the ball always performs a uniform circular motion. Find the angular velocity $\omega_C$ of this motion (not the angular velocity of the ball).
+A platform is rotating with constant angular velocity $\omega$. A ball with mass $m$, radius $a$ and moment of inertia $I$ moves on the platform without slipping. Prove that no matter what the initial conditions are, the center of the ball always performs a uniform circular motion. Find the angular velocity $\omega_C$ of this motion (not the angular velocity of the ball).
 ![](../Images/General_Physics/2026_spring_midterm/p10.png)
