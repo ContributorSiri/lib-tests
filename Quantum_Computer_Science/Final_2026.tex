@@ -1,0 +1,104 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{graphicx,float,wrapfig}
+\usepackage{braket}
+
+\topmargin=-0.45in      %
+\evensidemargin=0in     %
+\oddsidemargin=0in      %
+\textwidth=6.5in        %
+\textheight=9.0in       %
+\headsep=0.25in         %
+
+\linespread{1.1}
+
+\title{\textbf{QCS 2026 Finals}}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Intro}
+The exam is on 2026.6.11 from 9:50 to 12:20. The overall score is 100. You may bring two A4 cheat sheets (double-sided).
+
+\section{Concepts (20 pts)}
+1. Name a discrete gate set for universal quantum computation. (2 pts)\\
+2. List three different physical implementations of quantum computers. (3 pts)\\
+3. Explain the concepts of complexity classes P, NP, BPP, and BQP. Give the relationship between P, BPP, and BQP. (5 pts)\\
+4. For an error correction code encoding 1 logical qubit and being able to correct all single-qubit Pauli errors, what is the minimum number of physical qubits it can use? Show your reasoning and calculation. (5 pts)\\
+5. Let $N=2^n$, and a function from $\{0,1\}^n$ to $\{0,1\}^m$ has period $r$, to which we apply a period finding quantum algorithm. Describe the characteristics of the outcome probability distribution after QFT, and write down the mathematical relation that the peak positions $y$ must satisfy. (5 pts)
+
+\section{Gates and Physical Implementations (20 pts)}
+1.\\
+(a) We consider $qAND$ gate:
+\[\ket a_1 \ket b_2=\ket{a \& b}_1\ket c_2, \]
+where $a,b\in\{0,1\}$, and $\&$ is the classical AND operator. Can $\ket c_2$ be a qubit ancilla? Give your reason. (2 pts)\\
+(b) We implement system $1,2$ with qutrits, whose computational basis are labeled $\ket 0, \ket 1, \ket 2.$ We use a gate called $iSWAP$ which swaps $\ket{02}$ and $\ket{11}$ and leaves all the other states as they are. Use this to construct the quantum circuit of $qAND$ and $qAND^{-1}$, and draw the circuit diagrams. (4 pts)\\
+(c) How does this $qAND$ gate help to reduce circuit depth? (1 pts)\\
+Hint: Consider gates with multiple control qubits, and in a physical implementation where the qutrits form some more complex structure than a $1-D$ chain but we can only perform $iSWAP$ on adjacent qutrits.\\ \\
+2. We now consider a quantum computer using trapped ions. \\
+(a) Explain the Doppler cooling mechanism for ions in a few sentences. (2 pts)\\
+(b) Construct a circuit of $CNOT$ using Hadamard gates and $CZ$ gates, and draw the circuit diagram. (1 pts)\\
+(c) Below we consider interaction between two of the multiple ions in the system. When considering ion $m$ and ion $n$, we can write their state as $\ket {e_i}_m \ket{e_j}_n\ket{s}. $ $\ket {e_i}$ can take the states $\ket g,\ket{e_0},\ket{e_1}$, corresponding the the ground state, the first excited state and the second excited state, respectively. The number $s$ stands for the shared sonic state number, which can be viewed as the energy level state for a quantum harmonic oscillator. The $\hat a$ and $\hat a^\dagger$ below stand for the annihilation operator and creation operator for such oscillator. When we are considering only one ion $m$ and the gate acts trivially on the $\ket {e_i}$ for the other ion, we can simply write the state we are focusing on as $\ket {e_i}_m \ket{s}$ for convenience. \\
+Define a unitary operator
+\[\hat U_{n}^{k,q}=\exp{[e^{-ik\pi /2}(\ket{e_q}_n\bra{g}\hat ae^{-i\phi}+\hat a^{\dagger}\ket{g}_n\bra{e_q}e^{i\phi})]}.\]
+$k$ is a angle parameter of the gate. 
+Calculate the state after applying the unitary on the following states: $\ket g_n\ket 0, \ket g_n\ket 1, \ket {e_q}_n\ket 0.$ (6 pts)\\
+Hint: Use the Taylor expansion
+\[e^{\hat A}=I+\sum_{n\geq 1}\frac{A^n}{n!}.\]
+(d) Prove that if we encode on each ion the computational basis $\ket{0_L}=\ket{g}, \ket{1_L}=\ket{e_0}$, prove that the unitary
+\[\hat U_{mn}=\hat U_m^{1,0}\hat U_n^{2,1}\hat U_m^{1,0}\]
+is equivalent to the $CZ$ gate (4 pts).\\
+
+\section{Phase matched Grover algorithm (20 pts)}
+The Grover search algorithm searches for elements in a specific set $S$, containing $M$ elements, in the whole set containing $N>M$ elements.\\
+1. Consider
+\[U_f=I-2\sum_{x\in S}\ket x\bra x, D=2\ket s\bra s-I.\]
+\[\ket s=\frac{1}{\sqrt N}\sum_{x=0}^{N-1}\ket x.\]
+(a) Prove that $U_f$ is unitary. Write down the effect of $U_f$ on the basis states that are in $S$ and on those that are not. (3 pts + 2 pts)\\
+(b) Calculate $DU_f\ket s$, and find out the relation between $M$ and $N$ such that the algorithm find a vector in $S$ with probability 1. (5 pts)\\
+2. Consider
+\[U_f=I-(1-e^{i\phi})\sum_{x\in S}\ket x\bra x, D=(1-e^{i\phi})\ket s\bra s-I.\]
+(a) Prove that $U_f$ is unitary. Write down the effect of $U_f$ on the basis states that are in $S$ and on those that are not. (3 pts + 2 pts)\\
+(b) Calculate $DU_f\ket s$, when $M/N$ exceeds a certain limit, the algorithm find a vector in $S$ with probability 1. Find the limit. (5 pts)\\
+Hint: Expand using
+\[\ket m=\frac{1}{\sqrt M}\sum_{x\in S}\ket x,\ket u=\frac{1}{\sqrt {N-M}}\sum_{x\notin S}\ket x.\]
+
+\section{Deutsch-Jozsa Algorithm (20 pts)}
+We want to determine whether a function $f:\{0,1\}^n\xrightarrow{} \{0,1\}$ is balanced or constant using the oracle
+\[U_f\ket x \ket y=\ket x\ket{y\oplus f(x)}.\]
+1. Prove that (6 pts)
+\[U_f\ket x\ket -=(-1)^{f(x)}\ket x \ket -.\]
+2. If we prepare the state to be $\ket 0^{\otimes n}\ket 1$, apply $H^{\otimes(n+1)}$, then $U_f$, then $H^{\otimes n}\otimes I$. Prove that if $f$ is constant then we always get $\ket 0^{\otimes n}$, but if it is balanced we never get $\ket 0^{\otimes n}$. (10 pts)\\
+3. Consider the function
+\[f(x_0,x_1)=x_1 \oplus x_0.\]
+Calculate the final state in the Deutsch-Jozsa algorithm, and determine whether the function is balanced or constant. Does it fit with the result of direct counting? (4 pts)
+
+\section{[[4,2,2]] Iceberg Code (20 pts)}
+We consider the stabilizer code, encoding 2 logical qubits, with stabilizers
+\[g_1=X_1X_2X_3X_4, g_2=Z_1Z_2Z_3Z_4.\]
+1. Verify that $g_1,g_2$ commute and are independent of each other. (4 pts)\\
+2. We define the logical $X$ and $Z$ operators as
+\[\bar X_1=X_1X_2I_3I_4,\bar X_2=I_1X_2I_3X_4,\bar Z_1=Z_1I_2Z_3I_4,\bar Z_2=I_1I_2Z_3Z_4.\]
+(i) Verify that all of those operators commute with $g_1$ and $g_2$. (2 pts)\\
+(ii) Verify that all of those operators are not generated ny $g_1$ and $g_2$. (2 pts)\\
+(iii) Verify that except for $\bar X_i \bar Z_i=-\bar Z_i\bar X_i,i=1,2$, all other pairs of operators in $\bar X_1,\bar X_2,\bar Z_1,\bar Z_2$ commute. (2 pts)\\
+3. Find out the explicit computational basis expansion of the logical states
+\[\ket{\overline{00}},\ket{\overline{01}},\ket{\overline{10}},\ket{\overline{11}}.\]
+They satisfy $\bar Z_i\ket{\overline{a_1a_2}}=(-1)^{a_i}\ket{\overline{a_1a_2}},i=1,2.$ (4 pts)\\
+4. Fill in the blanks with $+1$ and $-1$ that represent the error syndromes that can be obtained by measuring the stabilizers after the error occurred, reflecting whether the state is in the $+1$ or $-1$ eigenstate of the stabilizers.
+\begin{table*}[ht]
+\centering
+\begin{tabular}{|c|*{4}{c|}|*{4}{c|}|*{4}{c|}}   % 1 Error, 4 X's, 3 Z's, 2 Y's
+\hline
+Error & X$_1$ & X$_2$ & X$_3$ & X$_4$ & Z$_1$ & Z$_2$ & Z$_3$ & Z$_4$ & Y$_1$ & Y$_2$ & Y$_3$ & Y$_4$ \\
+\hline
+S$_1$ &       &       &       &       &       &       &       &       &       &       &       &       \\
+S$_2$ &       &       &       &       &       &       &       &       &       &       &       &       \\
+\hline
+\end{tabular}
+\end{table*}
+What observation can you make on those error syndromes for same-type errors on different qubits? How is it consistent with the code distance $d=2$? Why can the code detect all the single-qubit errors but cannot correct them? (6 pts)
+
+\end{document}
