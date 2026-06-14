@@ -64,7 +64,7 @@
    $$ E_x = E_0 \sin\left(\frac{m\pi y}{L}\right) \sin(kz - \omega t)$$
    
 
-   with $E_y = E_z = 0$, and $B$ is perpendicular to $E$, implying $B_z = 0$.
+   with $E_y = E_z = 0$, and $B$ is perpendicular to $E$, implying $B_x = 0$.
 
    (a) Derive the dispersion relation $\omega(k)$ for this mode, which describes the relationship between $\omega$ and $k$.
 
